@@ -1,12 +1,46 @@
 import React from "react";
-import { Container, Content, SubContent } from "./ContactPageElements";
+import { Button, ContactLink, ContactTitle, Container, Content, ContentH1, LeftPanel, PageTitle, RightPanel, Image } from "./ContactPageElements";
+import Pdf from "../../assets/Resume_NathanGoh.pdf";
 
 const ContactPage = () => {
   return (
     <Container>
       <Content>
-        <SubContent></SubContent>
-        <SubContent></SubContent>
+        <LeftPanel>
+          <Image src="src\assets\contactme.png" alt="contactme-img" />
+        </LeftPanel>
+        <RightPanel>
+          <PageTitle>Contact</PageTitle>
+          <ContentH1>Hope you like what you've seen here.</ContentH1>
+          <ContentH1>Let's have a talk to get to know me better!</ContentH1>
+          <ContactTitle>Email</ContactTitle>
+          <ContactLink
+            href="mailto:gohjunhao95@gmail.com"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location = "mailto:gohjunhao95@gmail.com";
+            }}>
+            gohjunhao95@gmail.com
+          </ContactLink>
+          <ContactTitle>Phone</ContactTitle>
+          <ContactLink
+            href="https://wa.me/60162398645"
+            onClick={(e) => {
+              e.preventDefault();
+              window.open("https://wa.me/60162398645", "_blank", "noopener, noreferrer");
+            }}>
+            +6016-2398645
+          </ContactLink>
+          <ContactTitle>CV</ContactTitle>
+          <Button
+            href={Pdf}
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(Pdf, "_blank", "noopener, noreffer");
+            }}>
+            View
+          </Button>
+        </RightPanel>
       </Content>
     </Container>
   );

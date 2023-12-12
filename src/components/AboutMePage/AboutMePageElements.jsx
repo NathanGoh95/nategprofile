@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: yellow;
   height: 100%;
-  padding: 20px;
 `;
 
 export const Content = styled.div`
-  background-color: purple;
+  background-color: #0d1b2a;
   display: flex;
   width: 100%;
   height: 100%;
@@ -18,10 +16,43 @@ export const Content = styled.div`
   }
 `;
 
-export const SubContent = styled.div`
-  border: 20px solid green;
+export const LeftPanel = styled.div`
   width: 50%;
   height: 100%;
+  padding: 100px 150px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+export const Image = styled.img`
+  width: 100%;
+`;
+
+export const RightPanel = styled.div`
+  padding: 25px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+export const PageTitle = styled.div`
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+`;
+
+export const ContentP = styled.div`
+  color: #fff;
+  font-size: 20px;
+  margin: 30px 20px 0;
 
   @media screen and (max-width: 768px) {
     width: 100%;

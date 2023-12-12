@@ -23,7 +23,7 @@ export const Content = styled.div`
 
 export const ContentH1 = styled.div`
   width: 100%;
-  font-size: 8rem;
+  font-size: 128px;
   font-weight: 700;
   color: #f7b32b;
   margin: 30px 0;
@@ -35,7 +35,7 @@ export const ContentH1 = styled.div`
 
 export const ContentP = styled.div`
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 700;
   color: #fff;
 `;

@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: blue;
   height: 100%;
-  padding: 20px;
 `;
 
 export const Content = styled.div`
-  background-color: yellow;
+  background-color: #0d1b2a;
   display: flex;
   width: 100%;
   height: 100%;
@@ -18,12 +16,58 @@ export const Content = styled.div`
   }
 `;
 
-export const SubContent = styled.div`
-  border: 20px solid green;
+export const LeftPanel = styled.div`
   width: 50%;
   height: 100%;
+  padding: 25px 50px;
 
   @media screen and (max-width: 768px) {
     width: 100%;
   }
+`;
+
+export const Image = styled.img`
+  width: 100%;
+`;
+
+export const RightPanel = styled.div`
+  padding: 25px 50px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: auto;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+export const PageTitle = styled.div`
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+`;
+
+export const CompanyName = styled.div`
+  color: #eec584;
+  font-size: 25px;
+  margin: 40px 30px 0;
+  display: flex;
+  justify-content: center;
+`;
+
+export const RoleTitle = styled.div`
+  color: #fff;
+  font-size: 18px;
+  text-decoration: underline;
+  margin: 20px 30px 0;
+`;
+
+export const RoleDesc = styled.div`
+  color: #fff;
+  font-size: 16px;
+  margin: 20px 30px 0;
 `;

@@ -6,7 +6,7 @@ const ExperiencePage = () => {
     <Container>
       <Content>
         <LeftPanel>
-          <Image src="src\assets\experiencepage.png" alt="experiencepage-img" />
+          <Image src="images/experiencepage.png" alt="experiencepage-img" />
         </LeftPanel>
         <RightPanel>
           <PageTitle>Working Experience</PageTitle>

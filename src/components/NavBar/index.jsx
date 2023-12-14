@@ -18,17 +18,17 @@ const NavBar = () => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about-me" onClick={() => setPageState("about-me")}>
+              <NavLinks to="/about-me" onClick={() => setPageState("about-me")}>
                 About Me
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="experience" onClick={() => setPageState("experience")}>
+              <NavLinks to="/experience" onClick={() => setPageState("experience")}>
                 Experience
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact" onClick={() => setPageState("contact")}>
+              <NavLinks to="/contact" onClick={() => setPageState("contact")}>
                 Contact
               </NavLinks>
             </NavItem>

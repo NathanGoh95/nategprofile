@@ -6,7 +6,7 @@ const AboutMePage = () => {
     <Container>
       <Content>
         <LeftPanel>
-          <Image src="/images/aboutme.png" alt="aboutme-img" />
+          <Image src="aboutme.png" alt="aboutme-img" />
         </LeftPanel>
         <RightPanel>
           <PageTitle>About Me</PageTitle>

@@ -7,7 +7,7 @@ const ContactPage = () => {
     <Container>
       <Content>
         <LeftPanel>
-          <Image src="images/contactme.png" alt="contactme-img" />
+          <Image src="contactme.png" alt="contactme-img" />
         </LeftPanel>
         <RightPanel>
           <PageTitle>Contact</PageTitle>

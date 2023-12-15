@@ -10,27 +10,19 @@ const NavBar = () => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/" onClick={() => setPageState("default")}>
-            N.G
-          </NavLogo>
+          <NavLogo onClick={() => setPageState("default")}>N.G</NavLogo>
           <MobileIcon onClick={() => toggle()}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/about-me" onClick={() => setPageState("about-me")}>
-                About Me
-              </NavLinks>
+              <NavLinks onClick={() => setPageState("about-me")}>About Me</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/experience" onClick={() => setPageState("experience")}>
-                Experience
-              </NavLinks>
+              <NavLinks onClick={() => setPageState("experience")}>Experience</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/contact" onClick={() => setPageState("contact")}>
-                Contact
-              </NavLinks>
+              <NavLinks onClick={() => setPageState("contact")}>Contact</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

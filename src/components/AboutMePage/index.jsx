@@ -10,7 +10,7 @@ const AboutMePage = () => {
         </LeftPanel>
         <RightPanel>
           <PageTitle>About Me</PageTitle>
-          <ContentP>Hello, I am Nathan! I started my career as a Marketer in a property developer organization and then futher expanding myself into operational roles in the E-Commerce industry and currently as a Process Coordinator.</ContentP>
+          <ContentP>Hello, I am Nathan! I started my career as a Marketer in a property developer organization and then further expanding myself into operational roles in the E-Commerce industry and currently as a Process Coordinator.</ContentP>
           <ContentP>
             I've recently pickup the interest of learning coding skills for web development mainly on the Front-End side. I started my coding journey through self learning and enrolling to a professional certificate offered by Meta.
           </ContentP>

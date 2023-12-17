@@ -3,18 +3,18 @@ import { SideBarContainer, Icon, CloseIcon, SideBarMenu, SideBarWrapper, SideBar
 import { PageStateContext } from "../../context/PageState";
 
 const SideBar = () => {
-  const { isOpen, toggle } = useContext(PageStateContext);
+  const { isOpen, toggle, setPageState } = useContext(PageStateContext);
 
   return (
-    <SideBarContainer isOpen={isOpen}>
+    <SideBarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={() => toggle()}>
         <CloseIcon />
       </Icon>
       <SideBarWrapper>
         <SideBarMenu>
-          <SideBarLink to="about-me">About Me</SideBarLink>
-          <SideBarLink to="experience">Experience</SideBarLink>
-          <SideBarLink to="contact">Contact</SideBarLink>
+          <SideBarLink onClick={() => setPageState("about-me")}>About Me</SideBarLink>
+          <SideBarLink onClick={() => setPageState("experience")}>Experience</SideBarLink>
+          <SideBarLink onClick={() => setPageState("contact")}>Contact</SideBarLink>
         </SideBarMenu>
       </SideBarWrapper>
     </SideBarContainer>

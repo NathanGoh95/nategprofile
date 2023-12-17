@@ -40,6 +40,20 @@ export const NavLogo = styled(LinkR)`
 
   &:hover {
     color: #f7b32b;
+  }
+
+  &:hover #hide {
+    max-width: 100%;
+  }
+`;
+
+export const HiddenDiv = styled.div`
+  display: inline-block;
+  max-width: 0%;
+  vertical-align: bottom;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 0.5s ease-in-out;
 `;
 
 export const MobileIcon = styled.div`

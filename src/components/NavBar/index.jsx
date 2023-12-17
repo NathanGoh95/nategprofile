@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { FaBars } from "react-icons/fa";
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from "./NavBarElements";
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Div, HiddenDiv } from "./NavBarElements";
 import { PageStateContext } from "../../context/PageState";
 
 const NavBar = () => {
@@ -10,7 +10,9 @@ const NavBar = () => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo onClick={() => setPageState("default")}>N.G</NavLogo>
+          <NavLogo onClick={() => setPageState("default")}>
+            N<HiddenDiv id="hide">athan</HiddenDiv>G<HiddenDiv id="hide">oh</HiddenDiv>
+          </NavLogo>
           <MobileIcon onClick={() => toggle()}>
             <FaBars />
           </MobileIcon>

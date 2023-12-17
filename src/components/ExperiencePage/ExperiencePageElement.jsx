@@ -2,13 +2,17 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 100%;
+  overflow: hidden;
 `;
 
 export const Content = styled.div`
   background-color: #0d1b2a;
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
+  padding: 20px;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -19,7 +23,9 @@ export const Content = styled.div`
 export const LeftPanel = styled.div`
   width: 50%;
   height: 100%;
-  padding: 25px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -28,6 +34,10 @@ export const LeftPanel = styled.div`
 
 export const Image = styled.img`
   width: 100%;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const RightPanel = styled.div`

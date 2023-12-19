@@ -228,6 +228,16 @@ Error generating stack: `+o.message+`
   font-weight: 700;
   color: #f7b32b;
   margin: 30px 0;
+  animation: fade-in 2s;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   // @media screen and (max-width: 768px) {
   //   width: 100%;
@@ -258,6 +268,16 @@ Error generating stack: `+o.message+`
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fade-in-left 2s;
+
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -275,6 +295,18 @@ Error generating stack: `+o.message+`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation: fade-in-right 2s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+
+  @keyframes fade-in-right {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -313,6 +345,16 @@ Error generating stack: `+o.message+`
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fade-in-left 2s;
+
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -332,6 +374,18 @@ Error generating stack: `+o.message+`
   justify-content: flex-start;
   overflow: auto;
   box-sizing: border-box;
+  animation: fade-in-right 2s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+
+  @keyframes fade-in-right {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -376,6 +430,16 @@ Error generating stack: `+o.message+`
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fade-in-left 2s;
+
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -393,10 +457,22 @@ Error generating stack: `+o.message+`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation: fade-in-right 2s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
 
-  // @media screen and (max-width: 768px) {
-  //   width: 100%;
-  // }
+  @keyframes fade-in-right {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `,Rg=R.div`
   color: #fff;
   font-size: 40px;
@@ -461,4 +537,4 @@ Error generating stack: `+o.message+`
     transform: translateY(10px);
     transition: 100ms;
   }
-`,Ga="/nategprofile/assets/Resume_NathanGoh-e6ca5768.pdf",Og=()=>k.jsx(_g,{children:k.jsxs(Ng,{children:[k.jsx(zg,{children:k.jsx(jg,{src:"contactme.png",alt:"contactme-img"})}),k.jsxs(Tg,{children:[k.jsx(Rg,{children:"Contact"}),k.jsx(Ka,{children:"Hope you like what you've seen here."}),k.jsx(Ka,{children:"Let's have a talk to get to know me better!"}),k.jsx(sl,{children:"Email"}),k.jsx(Ya,{href:"mailto:gohjunhao95@gmail.com",onClick:e=>{e.preventDefault(),window.location="mailto:gohjunhao95@gmail.com"},children:"gohjunhao95@gmail.com"}),k.jsx(sl,{children:"Phone"}),k.jsx(Ya,{href:"https://wa.me/60162398645",onClick:e=>{e.preventDefault(),window.open("https://wa.me/60162398645","_blank","noopener, noreferrer")},children:"+6016-2398645"}),k.jsx(sl,{children:"CV"}),k.jsx(Lg,{href:Ga,onClick:e=>{e.preventDefault(),window.open(Ga,"_blank","noopener, noreffer")},children:"View"})]})]})}),Ig=()=>{const{pageState:e}=T.useContext(Co);return k.jsxs("div",{style:{height:"calc(100vh - 80px)"},children:[e==="default"&&k.jsx(fg,{}),e==="about-me"&&k.jsx(yg,{}),e==="experience"&&k.jsx(Pg,{}),e==="contact"&&k.jsx(Og,{})]})};function $g(){return k.jsx(eg,{children:k.jsxs(Q0,{children:[k.jsx(ug,{}),k.jsx(tg,{}),k.jsx(Ig,{})]})})}al.createRoot(document.getElementById("root")).render(k.jsx(xe.StrictMode,{children:k.jsx($g,{})}));
+`,Ga="/nategprofile/assets/Resume_NathanGoh-f529df41.pdf",Og=()=>k.jsx(_g,{children:k.jsxs(Ng,{children:[k.jsx(zg,{children:k.jsx(jg,{src:"contactme.png",alt:"contactme-img"})}),k.jsxs(Tg,{children:[k.jsx(Rg,{children:"Contact"}),k.jsx(Ka,{children:"Hope you like what you've seen here."}),k.jsx(Ka,{children:"Let's have a talk to get to know me better!"}),k.jsx(sl,{children:"Email"}),k.jsx(Ya,{href:"mailto:gohjunhao95@gmail.com",onClick:e=>{e.preventDefault(),window.location="mailto:gohjunhao95@gmail.com"},children:"gohjunhao95@gmail.com"}),k.jsx(sl,{children:"Phone"}),k.jsx(Ya,{href:"https://wa.me/60162398645",onClick:e=>{e.preventDefault(),window.open("https://wa.me/60162398645","_blank","noopener, noreferrer")},children:"+6016-2398645"}),k.jsx(sl,{children:"CV"}),k.jsx(Lg,{href:Ga,onClick:e=>{e.preventDefault(),window.open(Ga,"_blank","noopener, noreffer")},children:"View"})]})]})}),Ig=()=>{const{pageState:e}=T.useContext(Co);return k.jsxs("div",{style:{height:"calc(100vh - 80px)"},children:[e==="default"&&k.jsx(fg,{}),e==="about-me"&&k.jsx(yg,{}),e==="experience"&&k.jsx(Pg,{}),e==="contact"&&k.jsx(Og,{})]})};function $g(){return k.jsx(eg,{children:k.jsxs(Q0,{children:[k.jsx(ug,{}),k.jsx(tg,{}),k.jsx(Ig,{})]})})}al.createRoot(document.getElementById("root")).render(k.jsx(xe.StrictMode,{children:k.jsx($g,{})}));

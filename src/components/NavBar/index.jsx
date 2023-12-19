@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { FaBars } from "react-icons/fa";
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Div, HiddenDiv } from "./NavBarElements";
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, HiddenDiv } from "./NavBarElements";
 import { PageStateContext } from "../../context/PageState";
 
 const NavBar = () => {

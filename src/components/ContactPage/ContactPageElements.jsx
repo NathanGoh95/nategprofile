@@ -25,6 +25,16 @@ export const LeftPanel = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fade-in-left 2s;
+
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -46,10 +56,22 @@ export const RightPanel = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation: fade-in-right 2s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
 
-  // @media screen and (max-width: 768px) {
-  //   width: 100%;
-  // }
+  @keyframes fade-in-right {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const PageTitle = styled.div`

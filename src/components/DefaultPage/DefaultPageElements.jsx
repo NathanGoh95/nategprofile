@@ -27,6 +27,16 @@ export const ContentH1 = styled.div`
   font-weight: 700;
   color: #f7b32b;
   margin: 30px 0;
+  animation: fade-in 2s;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   // @media screen and (max-width: 768px) {
   //   width: 100%;

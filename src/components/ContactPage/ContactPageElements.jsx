@@ -75,24 +75,24 @@ export const RightPanel = styled.div`
 `;
 
 export const PageTitle = styled.div`
-  color: #fff;
+  color: #dee2e6;
   font-size: 40px;
 `;
 
 export const ContentH1 = styled.div`
-  color: #fff;
+  color: #dee2e6;
   font-size: 20px;
   margin: 20px 0 0;
 `;
 
 export const ContactTitle = styled.div`
-  color: #fff;
+  color: #dee2e6;
   font-size: 25px;
   margin: 30px 0 0;
 `;
 
 export const ContactLink = styled.div`
-  color: #fff;
+  color: #dee2e6;
   font-size: 20px;
   margin: 30px 0 0;
   cursor: pointer;
@@ -124,7 +124,7 @@ export const Button = styled.div`
   padding: 17px 100px;
   border-radius: 50px;
   border: 0;
-  background-color: white;
+  background-color: #dee2e6;
   box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -134,15 +134,12 @@ export const Button = styled.div`
   &:hover {
     letter-spacing: 3px;
     background-color: #f7b32b;
-    color: #fff;
+    color: #0d1b2a;
     box-shadow: #f7b32b 0px 7px 29px 0px;
+    font-weight: bold;
   }
 
   &:active {
-    letter-spacing: 3px;
-    background-color: hsl(261deg 80% 48%);
-    color: #fff;
-    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
   }

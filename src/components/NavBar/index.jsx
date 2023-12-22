@@ -11,7 +11,7 @@ const NavBar = () => {
       <Nav>
         <NavbarContainer>
           <NavLogo onClick={() => setPageState("default")}>
-            N<HiddenDiv id="hide">athan</HiddenDiv>G<HiddenDiv id="hide">oh</HiddenDiv>
+            N<HiddenDiv id="hide">athan</HiddenDiv>.G<HiddenDiv id="hide">oh</HiddenDiv>
           </NavLogo>
           <MobileIcon onClick={() => toggle()}>
             <FaBars />

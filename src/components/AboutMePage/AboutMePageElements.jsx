@@ -75,13 +75,13 @@ export const RightPanel = styled.div`
 `;
 
 export const PageTitle = styled.div`
-  color: #fff;
+  color: #dee2e6;
   font-size: 40px;
   text-align: center;
 `;
 
 export const ContentP = styled.div`
-  color: #fff;
+  color: #dee2e6;
   font-size: 20px;
   margin: 30px 20px 0;
 

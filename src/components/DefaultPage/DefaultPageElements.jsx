@@ -47,5 +47,5 @@ export const ContentP = styled.div`
   text-transform: uppercase;
   font-size: 32px;
   font-weight: 700;
-  color: #fff;
+  color: #dee2e6;
 `;

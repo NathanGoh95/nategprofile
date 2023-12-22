@@ -28,7 +28,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: #fff;
+  color: #dee2e6;
   cursor: pointer;
   font-size: 1.5rem;
   display: flex;
@@ -69,6 +69,11 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     color: #fff;
   }
+
+  &: hover {
+    color: #ffc300;
+    transition: 0.2s ease-in-out;
+  }
 `;
 
 export const NavMenu = styled.ul`
@@ -89,7 +94,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkR)`
-  color: #fff;
+  color: #dee2e6;
   display: flex;
   align-items: center;
   text-align: none;

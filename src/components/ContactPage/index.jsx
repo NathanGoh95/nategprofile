@@ -36,7 +36,7 @@ const ContactPage = () => {
             href={Pdf}
             onClick={(e) => {
               e.preventDefault();
-              window.open(Pdf, "_blank", "noopener, noreffer");
+              window.open(Pdf, "_blank", "noopener, noreferrer");
             }}>
             View
           </Button>

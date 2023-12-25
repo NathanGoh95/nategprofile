@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import { CompanyName, Container, Content, LeftPanel, PageTitle, RightPanel, RoleDesc, RoleTitle, CompanyDrawer, DrawerList } from "./ExperiencePageElement";
+import { CompanyName, Container, Content, LeftPanel, RightPanel, RoleDesc, RoleTitle, CompanyDrawer, DrawerList } from "./ExperiencePageElement";
 import { PageStateContext } from "../../context/PageState";
 
 const ExperiencePage = () => {

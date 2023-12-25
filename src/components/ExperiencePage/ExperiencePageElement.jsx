@@ -47,23 +47,36 @@ export const CompanyDrawer = styled.div`
   font-size: 25px;
   position: relative;
   transform: skewY(-15deg);
+
+  @media screen and (max-width: 768px) {
+    transform: skewY(0);
+  }
 `;
 
 export const DrawerList = styled.div`
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 500px;
-  padding: 50px;
+  width: 350px;
+  padding: 40px;
   background: #495057;
   margin-top: 40px;
   transition: 0.5s;
   cursor: pointer;
 
+  @media screen and (max-width: 768px) {
+    width: 280px;
+    padding: 20px;
+  }
+
   &:hover {
     transform: translateX(-50px);
     background-color: #f7b32b;
     color: #0d1b2a;
+
+    @media screen and (max-width: 768px) {
+      transform: translateX(50px);
+    }
   }
 
   &::before {

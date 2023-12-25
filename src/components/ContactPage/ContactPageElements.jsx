@@ -77,18 +77,30 @@ export const RightPanel = styled.div`
 export const PageTitle = styled.div`
   color: #dee2e6;
   font-size: 40px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 `;
 
 export const ContentH1 = styled.div`
   color: #dee2e6;
   font-size: 20px;
   margin: 20px 0 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 export const ContactTitle = styled.div`
   color: #dee2e6;
   font-size: 25px;
   margin: 30px 0 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 export const ContactLink = styled.div`
@@ -116,6 +128,10 @@ export const ContactLink = styled.div`
     transform-origin: left;
     transform: scaleX(1);
   }
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
 
 export const Button = styled.div`
@@ -142,5 +158,10 @@ export const Button = styled.div`
   &:active {
     transform: translateY(10px);
     transition: 100ms;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 15px;
+    padding: 10px 50px;
   }
 `;

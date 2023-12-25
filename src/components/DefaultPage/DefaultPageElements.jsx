@@ -14,6 +14,7 @@ export const Content = styled.div`
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -38,9 +39,9 @@ export const ContentH1 = styled.div`
     }
   }
 
-  // @media screen and (max-width: 768px) {
-  //   width: 100%;
-  // }
+  @media screen and (max-width: 768px) {
+    font-size: 96px;
+  }
 `;
 
 export const ContentP = styled.div`
@@ -48,4 +49,35 @@ export const ContentP = styled.div`
   font-size: 32px;
   font-weight: 700;
   color: #dee2e6;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+`;
+
+export const Button = styled.div`
+  margin-top: 70px;
+  cursor: pointer;
+  width: 200px;
+  height: 30px;
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  justify-content: center;
+  background-color: #dee2e6;
+  transition: all 0.5s ease;
+  font-size: 18px;
+
+  &:hover {
+    letter-spacing: 3px;
+    background-color: #f7b32b;
+    color: #0d1b2a;
+    box-shadow: #f7b32b 0px 7px 29px 0px;
+    font-weight: bold;
+  }
+
+  &:active {
+    transform: translateY(10px);
+    transition: 100ms;
+  }
 `;

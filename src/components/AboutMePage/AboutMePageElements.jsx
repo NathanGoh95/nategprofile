@@ -45,7 +45,7 @@ export const Image = styled.img`
   width: 70%;
 
   @media screen and (max-width: 768px) {
-    width: 40%;
+    width: 35%;
   }
 `;
 
@@ -78,6 +78,10 @@ export const PageTitle = styled.div`
   color: #dee2e6;
   font-size: 40px;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 35px;
+  }
 `;
 
 export const ContentP = styled.div`
@@ -87,5 +91,6 @@ export const ContentP = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 100%;
+    font-size: 17px;
   }
 `;

@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
+const navBarHeight = "80px";
+
 export const Container = styled.div`
-  height: 100%;
+  height: calc(100vh - ${navBarHeight});
   overflow: hidden;
+  margin-top: ${navBarHeight};
 `;
 
 export const Content = styled.div`
@@ -123,6 +126,7 @@ export const RightPanel = styled.div`
   padding: 50px;
   width: 50%;
   height: 100%;
+  margin
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,11 +168,22 @@ export const CompanyName = styled.div`
   position: relative;
 `;
 
+export const RoleContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0 0;`;
+
 export const RoleTitle = styled.div`
   color: #dee2e6;
   font-size: 18px;
   text-decoration: underline;
-  margin: 20px 30px 0;
+`;
+
+export const RoleYear = styled.div`
+  color: #dee2e6;
+  font-size: 18px;
+  text-align: right;
 `;
 
 export const RoleDesc = styled.div`

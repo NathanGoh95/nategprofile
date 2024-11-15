@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
+const navBarHeight = '80px';
+
 export const Container = styled.div`
-  height: 100%;
+  height: calc(100vh - ${navBarHeight});
+  margin-top: ${navBarHeight};
 `;
 
 export const Content = styled.div`
@@ -42,7 +45,7 @@ export const LeftPanel = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 70%;
+  width: 50%;
 
   @media screen and (max-width: 768px) {
     width: 35%;
@@ -88,9 +91,11 @@ export const ContentP = styled.div`
   color: #dee2e6;
   font-size: 20px;
   margin: 30px 20px 0;
-
+  line-height: 2rem;
+  
   @media screen and (max-width: 768px) {
     width: 100%;
     font-size: 17px;
+    line-height: 2rem;
   }
 `;

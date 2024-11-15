@@ -1,9 +1,9 @@
-import "./App.css";
-import NavBar from "./components/NavBar";
-import { BrowserRouter as Router } from "react-router-dom";
-import SideBar from "./components/SideBar";
-import { PageStateProvider } from "./context/PageState";
-import Home from "./pages";
+import './App.css';
+import NavBar from './components/NavBar';
+import { BrowserRouter as Router } from 'react-router-dom';
+import SideBar from './components/SideBar';
+import { PageStateProvider } from './context/PageState';
+import Home from './pages';
 
 function App() {
   return (

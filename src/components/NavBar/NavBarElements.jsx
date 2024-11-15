@@ -5,12 +5,13 @@ export const Nav = styled.nav`
   background: #0d1b2a;
   height: 80px;
   display: flex;
-  justift-content: center;
+  justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 0;
+  width: 100%;
+  z-index: 10;
 
   @media screen and (max-width: 768px) {
     transition: 0.8s all ease;

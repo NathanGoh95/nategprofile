@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
+const navBarHeight = '80px';
+
 export const Container = styled.div`
   background: #0d1b2a;
-  height: 100%;
+  height: calc(100vh - ${navBarHeight});
+  margin-top: ${navBarHeight};
   padding: 20px;
 `;
 

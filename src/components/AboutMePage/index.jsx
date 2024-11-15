@@ -1,21 +1,32 @@
-import React from "react";
-import { Container, Content, PageTitle, ContentP, LeftPanel, RightPanel, Image } from "./AboutMePageElements";
+import React from 'react';
+import {
+  Container,
+  Content,
+  PageTitle,
+  ContentP,
+  LeftPanel,
+  RightPanel,
+  Image,
+} from './AboutMePageElements';
 
 const AboutMePage = () => {
   return (
     <Container>
       <Content>
         <LeftPanel>
-          <Image src="aboutme.png" alt="aboutme-img" />
+          <Image src='aboutme.png' alt='aboutme-img' />
         </LeftPanel>
         <RightPanel>
           <PageTitle>About Me</PageTitle>
-          <ContentP>Hello, I am Nathan! I started my career as a Marketer in a property developer organization and then further expanding myself into operational roles in the E-Commerce industry and currently as a Process Coordinator.</ContentP>
           <ContentP>
-            I've recently pickup the interest of learning coding skills for web development mainly on the Front-End side. I started my coding journey through self learning and enrolling to a professional certificate offered by Meta.
+            I’ve recently transitioned into the tech industry, focusing on frontend development
+            through self-teaching and continuous learning. After completing an internship, I
+            continued working with the same team, gaining additional valuable hands-on experience.
+            This has deepened my passion for creating seamless, user-friendly digital solutions, and
+            I’m committed to further improving my skills. I’m eager to contribute to impactful
+            projects, collaborate with talented professionals, and continue growing in a dynamic and
+            innovative environment.
           </ContentP>
-          <ContentP>I'm focusing to further develop my career especially globally as a Frontend Developer, learning from global talents and putting what I've learned into use professionally.</ContentP>
-          <ContentP>SKILLS: HTML, CSS, JavaScript, React</ContentP>
         </RightPanel>
       </Content>
     </Container>

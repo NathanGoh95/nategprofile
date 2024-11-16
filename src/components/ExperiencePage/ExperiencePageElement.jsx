@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-const navBarHeight = "80px";
+const navBarHeight = '80px';
 
 export const Container = styled.div`
   height: calc(100vh - ${navBarHeight});
@@ -45,7 +45,7 @@ export const LeftPanel = styled.div`
   }
 `;
 
-export const CompanyDrawer = styled.div`
+export const DrawerContainer = styled.div`
   color: #eec584;
   font-size: 25px;
   position: relative;
@@ -86,7 +86,7 @@ export const DrawerList = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    content: "";
+    content: '';
     position: absolute;
     background: #212529;
     top: 0;
@@ -104,7 +104,7 @@ export const DrawerList = styled.div`
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: -40px;
     left: 0px;
@@ -161,7 +161,7 @@ export const PageTitle = styled.div`
 
 export const CompanyName = styled.div`
   color: #eec584;
-  font-size: 25px;
+  font-size: 1.5rem;
   margin: 40px 30px 0;
   display: flex;
   justify-content: center;
@@ -172,22 +172,62 @@ export const RoleContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 20px 0 0;`;
+  margin: 20px 0 0;
+`;
 
 export const RoleTitle = styled.div`
   color: #dee2e6;
-  font-size: 18px;
+  font-size: 1.15rem;
   text-decoration: underline;
 `;
 
 export const RoleYear = styled.div`
   color: #dee2e6;
-  font-size: 18px;
+  font-size: 1.15rem;
   text-align: right;
 `;
 
 export const RoleDesc = styled.div`
   color: #dee2e6;
-  font-size: 16px;
+  font-size: 1rem;
   margin: 20px 30px 0;
+`;
+
+export const SkillContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  padding: 20px;
+  margin-top: auto;
+  position: relative;
+  top: 15%;
+`;
+
+export const SkillItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
+
+export const SkillIcon = styled.img`
+  width: 80px;
+  height: 80px;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  background: transparent;
+  vertical-align: middle;
+`;
+
+export const SkillLabel = styled.div`
+  color: #dee2e6;
+  font-size: 1rem;
+  margin: 5px 0;
+  text-align: center;
 `;

@@ -8,12 +8,35 @@ import {
   RightPanel,
   RoleDesc,
   RoleTitle,
-  CompanyDrawer,
   DrawerList,
   RoleYear,
   RoleContainer,
+  SkillContainer,
+  SkillIcon,
+  SkillLabel,
+  DrawerContainer,
+  SkillItem,
 } from './ExperiencePageElement';
 import { PageStateContext } from '../../context/PageState';
+import reactLogo from '../../assets/react-logo.svg';
+import nextjsLogo from '../../assets/nextjs-logo.svg';
+import javascriptLogo from '../../assets/javascript-logo.svg';
+import typescriptLogo from '../../assets/typescript-logo.svg';
+import htmlLogo from '../../assets/html5-logo.svg';
+import cssLogo from '../../assets/css3-logo.svg';
+import tailwindLogo from '../../assets/tailwind-logo.svg';
+import mobxLogo from '../../assets/mobx-logo.svg';
+
+const skillLogos = {
+  reactLogo,
+  nextjsLogo,
+  javascriptLogo,
+  typescriptLogo,
+  htmlLogo,
+  cssLogo,
+  tailwindLogo,
+  mobxLogo,
+};
 
 const ExperiencePage = () => {
   const { setContentState, contentState } = useContext(PageStateContext);
@@ -22,7 +45,7 @@ const ExperiencePage = () => {
     <Container>
       <Content>
         <LeftPanel>
-          <CompanyDrawer>
+          <DrawerContainer>
             <DrawerList onClick={() => setContentState('workExperience')}>
               Work Experience
               <MdKeyboardDoubleArrowRight />
@@ -35,7 +58,7 @@ const ExperiencePage = () => {
               Projects
               <MdKeyboardDoubleArrowRight />
             </DrawerList>
-          </CompanyDrawer>
+          </DrawerContainer>
         </LeftPanel>
         <RightPanel>
           {contentState === 'workExperience' && (
@@ -140,7 +163,44 @@ const ExperiencePage = () => {
             </>
           )}
 
-          {contentState === 'professionalSkills' && <></>}
+          {contentState === 'professionalSkills' && (
+            <>
+              <SkillContainer>
+                <SkillItem>
+                  <SkillIcon src={skillLogos.reactLogo} alt='react-logo' />
+                  <SkillLabel>React</SkillLabel>
+                </SkillItem>
+                <SkillItem>
+                  <SkillIcon src={skillLogos.nextjsLogo} alt='nextjs-logo' />
+                  <SkillLabel>Next.js</SkillLabel>
+                </SkillItem>
+                <SkillItem>
+                  <SkillIcon src={skillLogos.javascriptLogo} alt='javascript-logo' />
+                  <SkillLabel>JavaScript</SkillLabel>
+                </SkillItem>
+                <SkillItem>
+                  <SkillIcon src={skillLogos.typescriptLogo} alt='typescript-logo' />
+                  <SkillLabel>TypeScript</SkillLabel>
+                </SkillItem>
+                <SkillItem>
+                  <SkillIcon src={skillLogos.htmlLogo} alt='html-logo' />
+                  <SkillLabel>HTML</SkillLabel>
+                </SkillItem>
+                <SkillItem>
+                  <SkillIcon src={skillLogos.cssLogo} alt='css-logo' />
+                  <SkillLabel>CSS</SkillLabel>
+                </SkillItem>
+                <SkillItem>
+                  <SkillIcon src={skillLogos.tailwindLogo} alt='tailwind-logo' />
+                  <SkillLabel>Tailwind CSS</SkillLabel>
+                </SkillItem>
+                <SkillItem>
+                  <SkillIcon src={skillLogos.mobxLogo} alt='mobx-logo' />
+                  <SkillLabel>MobX</SkillLabel>
+                </SkillItem>
+              </SkillContainer>
+            </>
+          )}
 
           {contentState === 'projects' && <></>}
         </RightPanel>

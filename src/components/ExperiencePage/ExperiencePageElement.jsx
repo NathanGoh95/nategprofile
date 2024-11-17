@@ -9,7 +9,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  background-color: #0d1b2a;
+  background-color: #000814;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,7 +47,7 @@ export const LeftPanel = styled.div`
 
 export const DrawerContainer = styled.div`
   color: #eec584;
-  font-size: 25px;
+  font-size: 20px;
   position: relative;
   transform: skewY(-15deg);
 
@@ -61,9 +61,9 @@ export const DrawerList = styled.div`
   display: flex;
   justify-content: space-between;
   width: 350px;
-  padding: 40px;
+  padding: 30px;
   background: #495057;
-  margin-top: 40px;
+  margin-top: 45px;
   transition: 0.5s;
   cursor: pointer;
 
@@ -72,17 +72,20 @@ export const DrawerList = styled.div`
     padding: 20px;
   }
 
-  &:hover {
+  &:hover,
+  &.active {
     transform: translateX(-50px);
     background-color: #f7b32b;
-    color: #0d1b2a;
+    color: #000814;
 
     @media screen and (max-width: 768px) {
       transform: translateX(50px);
     }
   }
 
-  &::before {
+  &::before,
+  &.active::before {
+    content: '';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,9 +101,10 @@ export const DrawerList = styled.div`
     transition: 0.5s;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &.active::before {
     background-color: #ff7b00;
-    color: #0d1b2a;
+    color: #000814;
   }
 
   &::after {
@@ -116,14 +120,15 @@ export const DrawerList = styled.div`
     transition: 0.5s;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &.active::after {
     background-color: #ff9500;
     color: #ffaa00;
   }
 `;
 
 export const RightPanel = styled.div`
-  padding: 50px;
+  padding: 50px 100px 50px 50px;
   width: 50%;
   height: 100%;
   margin
@@ -166,6 +171,9 @@ export const CompanyName = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
 `;
 
 export const RoleContainer = styled.div`
@@ -190,7 +198,8 @@ export const RoleYear = styled.div`
 export const RoleDesc = styled.div`
   color: #dee2e6;
   font-size: 1rem;
-  margin: 20px 30px 0;
+  margin: 20px 0 0 30px;
+  text-align: justify;
 `;
 
 export const SkillContainer = styled.div`

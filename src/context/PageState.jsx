@@ -9,7 +9,8 @@ export const PageStateProvider = ({ children }) => {
     setIsOpen(!isOpen);
   };
 
-  const [contentState, setContentState] = useState('contentOne');
+  const [contentState, setContentState] = useState('');
+  const [activeDrawer, setActiveDrawer] = useState('');
 
   const data = {
     pageState: pageState,
@@ -18,6 +19,8 @@ export const PageStateProvider = ({ children }) => {
     toggle: toggle,
     contentState: contentState,
     setContentState: setContentState,
+    activeDrawer: activeDrawer,
+    setActiveDrawer: setActiveDrawer,
   };
 
   return <PageStateContext.Provider value={data}>{children}</PageStateContext.Provider>;

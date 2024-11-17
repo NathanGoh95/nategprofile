@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
+import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
 
 export const Nav = styled.nav`
-  background: #0d1b2a;
+  background: #0d1321;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -95,7 +95,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkR)`
-  color: #dee2e6;
+  color: ${(props) => (props.active ? '#f7b32b' : '#dee2e6')};
   display: flex;
   align-items: center;
   text-align: none;
@@ -109,4 +109,6 @@ export const NavLinks = styled(LinkR)`
   &:hover {
     color: #f7b32b;
   }
+
+  border-bottom: ${(props) => (props.active ? '1px solid #f7b32b' : 'none')};
 `;

@@ -42,15 +42,6 @@ const ContactPage = () => {
             }}>
             +6016-2398645
           </ContactLink>
-          <ContactTitle>CV</ContactTitle>
-          <Button
-            href={Pdf}
-            onClick={(e) => {
-              e.preventDefault();
-              window.open(Pdf, '_blank', 'noopener, noreferrer');
-            }}>
-            View
-          </Button>
         </RightPanel>
       </Content>
     </Container>

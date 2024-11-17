@@ -3,7 +3,7 @@ import styled from "styled-components";
 const navBarHeight = '80px';
 
 export const Container = styled.div`
-  background: #0d1b2a;
+  background: #0d1321;
   height: calc(100vh - ${navBarHeight});
   margin-top: ${navBarHeight};
   padding: 20px;
@@ -27,11 +27,13 @@ export const Content = styled.div`
 
 export const ContentH1 = styled.div`
   width: 100%;
-  font-size: 128px;
+  font-size: 6rem;
   font-weight: 700;
   color: #f7b32b;
   margin: 30px 0;
   animation: fade-in 2s;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 
   @keyframes fade-in {
     from {
@@ -48,8 +50,7 @@ export const ContentH1 = styled.div`
 `;
 
 export const ContentP = styled.div`
-  text-transform: uppercase;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   color: #dee2e6;
 
@@ -70,11 +71,12 @@ export const Button = styled.div`
   background-color: #dee2e6;
   transition: all 0.5s ease;
   font-size: 18px;
+  border-radius: 8px;
 
   &:hover {
     letter-spacing: 3px;
     background-color: #f7b32b;
-    color: #0d1b2a;
+    color: #0d1321;
     box-shadow: #f7b32b 0px 7px 29px 0px;
     font-weight: bold;
   }

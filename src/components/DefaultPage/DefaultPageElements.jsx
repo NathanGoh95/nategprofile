@@ -45,7 +45,7 @@ export const ContentH1 = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 96px;
+    font-size: 5rem;
   }
 `;
 
@@ -55,12 +55,20 @@ export const ContentP = styled.div`
   color: #dee2e6;
 
   @media screen and (max-width: 768px) {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 `;
 
+export const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  gap: 50px;
+`;
+
 export const Button = styled.div`
-  margin-top: 70px;
   cursor: pointer;
   width: 200px;
   height: 30px;
@@ -70,7 +78,7 @@ export const Button = styled.div`
   justify-content: center;
   background-color: #dee2e6;
   transition: all 0.5s ease;
-  font-size: 18px;
+  font-size: 1rem;
   border-radius: 8px;
 
   &:hover {

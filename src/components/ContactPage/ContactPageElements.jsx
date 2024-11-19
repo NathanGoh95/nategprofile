@@ -79,40 +79,49 @@ export const RightPanel = styled.div`
 
 export const PageTitle = styled.div`
   color: #eec584;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
 
   @media screen and (max-width: 768px) {
-    font-size: 30px;
+    font-size: 2rem;
   }
 `;
 
 export const ContentH1 = styled.div`
   color: #dee2e6;
-  font-size: 20px;
-  margin: 20px 0 0;
+  font-size: 1.5rem;
+  margin-top: 10px;
 
   @media screen and (max-width: 768px) {
-    font-size: 16px;
+    font-size: 1rem;
   }
 `;
 
 export const ContactTitle = styled.div`
   color: #dee2e6;
-  font-size: 25px;
+  font-size: 1.5rem;
   margin: 30px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 1.125rem;
+  }
+
+  svg {
+    font-size: 1.5rem;
+    vertical-align: middle;
+    color: #eec584;
   }
 `;
 
 export const ContactLink = styled.div`
   color: #dee2e6;
-  font-size: 20px;
-  margin: 30px 0 0;
+  font-size: 1.25rem;
+  margin: 15px 0 0;
   cursor: pointer;
   position: relative;
 
@@ -136,38 +145,38 @@ export const ContactLink = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 15px;
+    font-size: 1rem;
   }
 `;
 
-export const Button = styled.div`
-  margin-top: 30px;
-  cursor: pointer;
-  padding: 17px 100px;
-  border-radius: 50px;
-  border: 0;
-  background-color: #dee2e6;
-  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 15px;
-  transition: all 0.5s ease;
+// export const Button = styled.div`
+//   margin-top: 30px;
+//   cursor: pointer;
+//   padding: 17px 100px;
+//   border-radius: 50px;
+//   border: 0;
+//   background-color: #dee2e6;
+//   box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+//   letter-spacing: 1.5px;
+//   text-transform: uppercase;
+//   font-size: 15px;
+//   transition: all 0.5s ease;
 
-  &:hover {
-    letter-spacing: 3px;
-    background-color: #f7b32b;
-    color: #000814;
-    box-shadow: #f7b32b 0px 7px 29px 0px;
-    font-weight: bold;
-  }
+//   &:hover {
+//     letter-spacing: 3px;
+//     background-color: #f7b32b;
+//     color: #000814;
+//     box-shadow: #f7b32b 0px 7px 29px 0px;
+//     font-weight: bold;
+//   }
 
-  &:active {
-    transform: translateY(10px);
-    transition: 100ms;
-  }
+//   &:active {
+//     transform: translateY(10px);
+//     transition: 100ms;
+//   }
 
-  @media screen and (max-width: 768px) {
-    margin-top: 15px;
-    padding: 10px 50px;
-  }
-`;
+//   @media screen and (max-width: 768px) {
+//     margin-top: 15px;
+//     padding: 10px 50px;
+//   }
+// `;

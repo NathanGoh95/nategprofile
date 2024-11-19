@@ -10,6 +10,7 @@ import htmlLogo from '../../assets/html5-logo.svg';
 import cssLogo from '../../assets/css3-logo.svg';
 import tailwindLogo from '../../assets/tailwind-logo.svg';
 import mobxLogo from '../../assets/mobx-logo.svg';
+import { LucideChevronRight, LucideChevronRightCircle, LucideChevronRightSquare, LucideChevronsRight } from 'lucide-react';
 
 const skillLogos = {
   reactLogo,
@@ -34,17 +35,23 @@ const ExperiencePage = () => {
       <Content>
         <LeftPanel>
           <DrawerContainer>
-            <DrawerList onClick={() => handleClick('workExperience')} className={activeDrawer === 'workExperience' ? 'active' : ''}>
+            <DrawerList
+              onClick={() => handleClick('workExperience')}
+              className={activeDrawer === 'workExperience' ? 'active' : ''}>
               Work Experience
-              <MdKeyboardDoubleArrowRight />
+              <LucideChevronRightCircle />
             </DrawerList>
-            <DrawerList onClick={() => handleClick('professionalSkills')} className={activeDrawer === 'professionalSkills' ? 'active' : ''}>
+            <DrawerList
+              onClick={() => handleClick('professionalSkills')}
+              className={activeDrawer === 'professionalSkills' ? 'active' : ''}>
               Professional Skills
-              <MdKeyboardDoubleArrowRight />
+              <LucideChevronRightCircle />
             </DrawerList>
-            <DrawerList onClick={() => handleClick('projects')} className={activeDrawer === 'projects' ? 'active' : ''}>
+            <DrawerList
+              onClick={() => handleClick('projects')}
+              className={activeDrawer === 'projects' ? 'active' : ''}>
               Projects
-              <MdKeyboardDoubleArrowRight />
+              <LucideChevronRightCircle />
             </DrawerList>
           </DrawerContainer>
         </LeftPanel>
@@ -57,11 +64,27 @@ const ExperiencePage = () => {
                   <RoleTitle>Software Engineer (Frontend)</RoleTitle>
                   <RoleYear>2024 - Present</RoleYear>
                 </RoleContainer>
-                <RoleDesc>• Developed and optimized frontend features using Next.js, TypeScript, Tailwind CSS, and MobX, significantly enhancing rendering efficiency and application performance</RoleDesc>
-                <RoleDesc>• Integrated APIs to enable seamless data flow and dynamic content rendering, boosting interactivity and user engagement</RoleDesc>
-                <RoleDesc>• Collaborated with stakeholders and designers to create user-friendly enhancements, directly improving users’ experience</RoleDesc>
-                <RoleDesc>• Actively participated in agile processes, including sprint planning and stand-ups, contributing to an improvement in feature delivery timelines</RoleDesc>
-                <RoleDesc>• Implemented proactive testing and debugging, reducing bug reports and increasing overall product stability</RoleDesc>
+                <RoleDesc>
+                  • Developed and optimized frontend features using Next.js, TypeScript, Tailwind
+                  CSS, and MobX, significantly enhancing rendering efficiency and application
+                  performance
+                </RoleDesc>
+                <RoleDesc>
+                  • Integrated APIs to enable seamless data flow and dynamic content rendering,
+                  boosting interactivity and user engagement
+                </RoleDesc>
+                <RoleDesc>
+                  • Collaborated with stakeholders and designers to create user-friendly
+                  enhancements, directly improving users’ experience
+                </RoleDesc>
+                <RoleDesc>
+                  • Actively participated in agile processes, including sprint planning and
+                  stand-ups, contributing to an improvement in feature delivery timelines
+                </RoleDesc>
+                <RoleDesc>
+                  • Implemented proactive testing and debugging, reducing bug reports and increasing
+                  overall product stability
+                </RoleDesc>
               </div>
               <div>
                 <CompanyName>Kibing Group Malaysia</CompanyName>
@@ -69,10 +92,22 @@ const ExperiencePage = () => {
                   <RoleTitle>Process Coordinator</RoleTitle>
                   <RoleYear>2022 - 2024</RoleYear>
                 </RoleContainer>
-                <RoleDesc>• Supported the Technical Director as a personal assistant, handling documentation and coordinating daily administrative tasks to streamline operations</RoleDesc>
-                <RoleDesc>• Facilitated communication across departments, ensuring the efficient execution of directives from HQ</RoleDesc>
-                <RoleDesc>• Established and maintained standardized documentation and workflows, reducing process inconsistencies and improving operational efficiency</RoleDesc>
-                <RoleDesc>• Prepared and presented essential departmental documentation like teahnical reports for senior management</RoleDesc>
+                <RoleDesc>
+                  • Supported the Technical Director as a personal assistant, handling documentation
+                  and coordinating daily administrative tasks to streamline operations
+                </RoleDesc>
+                <RoleDesc>
+                  • Facilitated communication across departments, ensuring the efficient execution
+                  of directives from HQ
+                </RoleDesc>
+                <RoleDesc>
+                  • Established and maintained standardized documentation and workflows, reducing
+                  process inconsistencies and improving operational efficiency
+                </RoleDesc>
+                <RoleDesc>
+                  • Prepared and presented essential departmental documentation like teahnical
+                  reports for senior management
+                </RoleDesc>
               </div>
               <div>
                 <CompanyName>Daikin Malaysia Sales & Services</CompanyName>
@@ -80,10 +115,22 @@ const ExperiencePage = () => {
                   <RoleTitle>Service Provider Support</RoleTitle>
                   <RoleYear>2021 - 2022</RoleYear>
                 </RoleContainer>
-                <RoleDesc>• Managed the onboarding and training of service providers, ensuring consistent service quality nationwide</RoleDesc>
-                <RoleDesc>• Converted 20+ suppliers to authorized service providers, expanding service reach and ensuring resource availability</RoleDesc>
-                <RoleDesc>• Provided support for service providers and handled customer inquiries, enhancing both service quality and customer satisfaction</RoleDesc>
-                <RoleDesc>• Oversaw the E-commerce platform on customer service and ensuring accurate stock management</RoleDesc>
+                <RoleDesc>
+                  • Managed the onboarding and training of service providers, ensuring consistent
+                  service quality nationwide
+                </RoleDesc>
+                <RoleDesc>
+                  • Converted 20+ suppliers to authorized service providers, expanding service reach
+                  and ensuring resource availability
+                </RoleDesc>
+                <RoleDesc>
+                  • Provided support for service providers and handled customer inquiries, enhancing
+                  both service quality and customer satisfaction
+                </RoleDesc>
+                <RoleDesc>
+                  • Oversaw the E-commerce platform on customer service and ensuring accurate stock
+                  management
+                </RoleDesc>
               </div>
               <div>
                 <CompanyName>Matrix Concepts Sdn Bhd</CompanyName>
@@ -91,10 +138,22 @@ const ExperiencePage = () => {
                   <RoleTitle>Sales Support & Marketing</RoleTitle>
                   <RoleYear>2018 - 2020</RoleYear>
                 </RoleContainer>
-                <RoleDesc>• Developed targeted marketing campaigns that achieved 80% sales for assigned projects, effectively reaching targetted buyer demographics</RoleDesc>
-                <RoleDesc>• Organized large-scale annual events and property exhibitions, driving walk-in traffic and potential buyers</RoleDesc>
-                <RoleDesc>• Ensured marketing collateral availability, coordinating materials like scale models and brochures to optimize promotional efforts</RoleDesc>
-                <RoleDesc>• Compiled and analyzed daily sales records, providing valuable insights for strategic planning</RoleDesc>
+                <RoleDesc>
+                  • Developed targeted marketing campaigns that achieved 80% sales for assigned
+                  projects, effectively reaching targetted buyer demographics
+                </RoleDesc>
+                <RoleDesc>
+                  • Organized large-scale annual events and property exhibitions, driving walk-in
+                  traffic and potential buyers
+                </RoleDesc>
+                <RoleDesc>
+                  • Ensured marketing collateral availability, coordinating materials like scale
+                  models and brochures to optimize promotional efforts
+                </RoleDesc>
+                <RoleDesc>
+                  • Compiled and analyzed daily sales records, providing valuable insights for
+                  strategic planning
+                </RoleDesc>
               </div>
             </>
           )}

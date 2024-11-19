@@ -53,7 +53,7 @@ export const Image = styled.img`
 `;
 
 export const RightPanel = styled.div`
-  padding: 25px;
+  padding: 50px 100px 50px 50px;
   width: 50%;
   height: 100%;
   display: flex;
@@ -80,44 +80,40 @@ export const RightPanel = styled.div`
 
 export const PageTitle = styled.div`
   color: #eec584;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
 
   @media screen and (max-width: 768px) {
-    font-size: 35px;
+    font-size: 2rem;
   }
 `;
 
 export const ContentP = styled.div`
   color: #dee2e6;
   font-size: 1rem;
-  margin: 30px 20px 0;
+  margin: 30px 20px;
   line-height: 2rem;
   text-align: justify;
   
   @media screen and (max-width: 768px) {
     width: 100%;
-    font-size: 17px;
     line-height: 2rem;
   }
 `;
 
 export const Button = styled.div`
-  width: 300px;
+  width: 250px;
   height: 30px;
-  margin-top: 30px;
   cursor: pointer;
   padding: 25px;
   border-radius: 8px;
-  border: 0;
   background-color: #dee2e6;
   box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
   letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 15px;
+  font-size: 1rem;
   display: flex;
   text-align: center;
   line-height: 50px;

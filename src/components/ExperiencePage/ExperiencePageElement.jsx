@@ -47,7 +47,7 @@ export const LeftPanel = styled.div`
 
 export const DrawerContainer = styled.div`
   color: #eec584;
-  font-size: 20px;
+  font-size: 1.25rem;
   position: relative;
   transform: skewY(-15deg);
 
@@ -63,7 +63,7 @@ export const DrawerList = styled.div`
   width: 350px;
   padding: 30px;
   background: #495057;
-  margin-top: 45px;
+  margin-top: 40px;
   transition: 0.5s;
   cursor: pointer;
 
@@ -93,8 +93,8 @@ export const DrawerList = styled.div`
     position: absolute;
     background: #212529;
     top: 0;
-    left: -40px;
-    width: 40px;
+    left: -30px;
+    width: 30px;
     height: 100%;
     transform-origin: right;
     transform: skewY(45deg);
@@ -110,10 +110,10 @@ export const DrawerList = styled.div`
   &::after {
     content: '';
     position: absolute;
-    top: -40px;
+    top: -30px;
     left: 0px;
     width: 100%;
-    height: 40px;
+    height: 30px;
     background: #343a40;
     transform-origin: bottom;
     transform: skewX(45deg);
@@ -159,7 +159,7 @@ export const RightPanel = styled.div`
 
 export const PageTitle = styled.div`
   color: #dee2e6;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
   position: relative;
 `;

@@ -101,7 +101,7 @@ export const NavLinks = styled(LinkR)`
   text-align: none;
   height: 100%;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-right: 50px;
   text-decoration: none;
   transition: 0.5s ease;

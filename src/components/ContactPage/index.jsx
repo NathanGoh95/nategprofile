@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Button,
   ContactLink,
   ContactTitle,
   Container,
@@ -11,7 +10,7 @@ import {
   RightPanel,
   Image,
 } from './ContactPageElements';
-import Pdf from '../../assets/Resume_Nathan_Goh.pdf';
+import { LucideGithub, LucideLinkedin, LucideMail, LucidePhone } from 'lucide-react';
 
 const ContactPage = () => {
   return (
@@ -22,9 +21,12 @@ const ContactPage = () => {
         </LeftPanel>
         <RightPanel>
           <PageTitle>Contact</PageTitle>
-          <ContentH1>Hope you like what you’ve seen here.</ContentH1>
-          <ContentH1>Let’s have a talk to get to know me better!</ContentH1>
-          <ContactTitle>Email</ContactTitle>
+          <ContentH1>Looking for a Developer?</ContentH1>
+          <ContentH1>I’d love to chat and I’m available for new opportunities!</ContentH1>
+          <ContactTitle>
+            <LucideMail />
+            Email
+          </ContactTitle>
           <ContactLink
             href='mailto:gohjunhao95@gmail.com'
             onClick={(e) => {
@@ -33,7 +35,10 @@ const ContactPage = () => {
             }}>
             gohjunhao95@gmail.com
           </ContactLink>
-          <ContactTitle>Phone</ContactTitle>
+          <ContactTitle>
+            <LucidePhone />
+            Phone
+          </ContactTitle>
           <ContactLink
             href='https://wa.me/60162398645'
             onClick={(e) => {
@@ -41,6 +46,34 @@ const ContactPage = () => {
               window.open('https://wa.me/60162398645', '_blank', 'noopener, noreferrer');
             }}>
             +6016-2398645
+          </ContactLink>
+          <ContactTitle>
+            <LucideLinkedin />
+            LinkedIn
+          </ContactTitle>
+          <ContactLink
+            href='https://www.linkedin.com/in/nathangjh/'
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(
+                'https://www.linkedin.com/in/nathangjh/',
+                '_blank',
+                'noopener, noreferrer',
+              );
+            }}>
+            linkedin.com/in/nathangjh/
+          </ContactLink>
+          <ContactTitle>
+            <LucideGithub />
+            GitHub
+          </ContactTitle>
+          <ContactLink
+            href='https://github.com/NathanGoh95'
+            onClick={(e) => {
+              e.preventDefault();
+              window.open('https://github.com/NathanGoh95', '_blank', 'noopener, noreferrer');
+            }}>
+            github.com/NathanGoh95
           </ContactLink>
         </RightPanel>
       </Content>

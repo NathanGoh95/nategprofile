@@ -28,7 +28,6 @@ const ContactPage = () => {
             Email
           </ContactTitle>
           <ContactLink
-            href='mailto:gohjunhao95@gmail.com'
             onClick={(e) => {
               e.preventDefault();
               window.location = 'mailto:gohjunhao95@gmail.com';
@@ -40,7 +39,6 @@ const ContactPage = () => {
             Phone
           </ContactTitle>
           <ContactLink
-            href='https://wa.me/60162398645'
             onClick={(e) => {
               e.preventDefault();
               window.open('https://wa.me/60162398645', '_blank', 'noopener, noreferrer');
@@ -52,7 +50,6 @@ const ContactPage = () => {
             LinkedIn
           </ContactTitle>
           <ContactLink
-            href='https://www.linkedin.com/in/nathangjh/'
             onClick={(e) => {
               e.preventDefault();
               window.open(
@@ -68,7 +65,6 @@ const ContactPage = () => {
             GitHub
           </ContactTitle>
           <ContactLink
-            href='https://github.com/NathanGoh95'
             onClick={(e) => {
               e.preventDefault();
               window.open('https://github.com/NathanGoh95', '_blank', 'noopener, noreferrer');

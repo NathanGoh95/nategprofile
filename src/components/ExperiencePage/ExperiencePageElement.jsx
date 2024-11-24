@@ -131,11 +131,9 @@ export const RightPanel = styled.div`
   padding: 50px 100px 50px 50px;
   width: 50%;
   height: 100%;
-  margin
   display: flex;
-  flex-direction: column;
+  justify-self: center;
   align-items: center;
-  justify-content: center;
   overflow: auto;
   box-sizing: border-box;
   animation: fade-in-right 2s forwards;
@@ -162,6 +160,15 @@ export const PageTitle = styled.div`
   font-size: 2.5rem;
   text-align: center;
   position: relative;
+`;
+
+export const CompanyContainer = styled.div`
+  height: 100%;
+  margin
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const CompanyName = styled.div`
@@ -211,9 +218,7 @@ export const SkillContainer = styled.div`
   width: 100%;
   height: 70%;
   padding: 20px;
-  margin-top: auto;
   position: relative;
-  top: 15%;
 `;
 
 export const SkillItem = styled.div`
@@ -239,4 +244,57 @@ export const SkillLabel = styled.div`
   font-size: 1rem;
   margin: 5px 0;
   text-align: center;
+`;
+
+export const ProjectContainer = styled.div`
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: start;
+`;
+
+export const ImageContainer = styled.div`
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+`;
+
+export const ProjectImage = styled.img`
+  aspect-ratio: 16/9;
+  width: 350px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  object-fit: cover;
+`;
+
+export const ProjectTitle = styled.div`
+  color: #eec584;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    color: #dee2e6;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #eec584;
+    }
+  }
+`;
+
+export const ProjectDesc = styled.div`
+  color: #dee2e6;
+  font-size: 1rem;
+  margin: 20px 0 0;
+  line-height: 1.6;
+  text-align: justify;
 `;

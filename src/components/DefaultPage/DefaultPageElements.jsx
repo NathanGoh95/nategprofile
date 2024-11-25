@@ -1,12 +1,21 @@
 import styled from "styled-components";
 
 const navBarHeight = '80px';
+const breakpoints = {
+  mobile: '480px',
+  tablet: '768px',
+  desktop: '1024px',
+}
 
 export const Container = styled.div`
   background: #0d1321;
   height: calc(100vh - ${navBarHeight});
   margin-top: ${navBarHeight};
   padding: 20px;
+
+  @media screen and (min-width: ${breakpoints.desktop}) {
+    padding: 40px;
+  }
 `;
 
 export const Content = styled.div`
@@ -19,9 +28,19 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     flex-direction: column;
     width: 100%;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  @media screen and (min-width: ${breakpoints.desktop}) {
+    flex-direction: column;
+    padding: 40px;
   }
 `;
 
@@ -44,8 +63,12 @@ export const ContentH1 = styled.div`
     }
   }
 
-  @media screen and (max-width: 768px) {
-    font-size: 5rem;
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    font-size: 4.5rem;
   }
 `;
 
@@ -54,7 +77,11 @@ export const ContentP = styled.div`
   font-weight: 700;
   color: #dee2e6;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
     font-size: 1.5rem;
   }
 `;
@@ -66,6 +93,15 @@ export const ButtonContainer = styled.div`
   justify-content: center;
   margin: 50px;
   gap: 50px;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    gap: 40px;
+  }
 `;
 
 export const Button = styled.div`
@@ -92,5 +128,15 @@ export const Button = styled.div`
   &:active {
     transform: translateY(10px);
     transition: 100ms;
+  }
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 0.8rem;
+    padding: 20px;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    width: 180px;
+    font-size: 0.8rem;
   }
 `;

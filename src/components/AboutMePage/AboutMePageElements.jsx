@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 const navBarHeight = '80px';
+const breakpoints = {
+  mobile: '480px',
+  tablet: '768px',
+  desktop: '1024px',
+};
 
 export const Container = styled.div`
   height: calc(100vh - ${navBarHeight});
@@ -16,8 +21,13 @@ export const Content = styled.div`
   height: 100%;
   padding: 20px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     flex-direction: column;
+    width: 100%;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    flex-direction: row;
     width: 100%;
   }
 `;
@@ -39,7 +49,7 @@ export const LeftPanel = styled.div`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     width: 100%;
   }
 `;
@@ -47,8 +57,12 @@ export const LeftPanel = styled.div`
 export const Image = styled.img`
   width: 50%;
 
-  @media screen and (max-width: 768px) {
-    width: 35%;
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    width: 70%;
   }
 `;
 
@@ -73,8 +87,15 @@ export const RightPanel = styled.div`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     width: 100%;
+    padding: 0 20px;
+    justify-content: start;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    width: 50%;
+    padding: 0 20px;
   }
 `;
 
@@ -86,7 +107,11 @@ export const PageTitle = styled.div`
   font-weight: bold;
   letter-spacing: 2px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
     font-size: 2rem;
   }
 `;
@@ -98,9 +123,18 @@ export const ContentP = styled.div`
   line-height: 2rem;
   text-align: justify;
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     width: 100%;
-    line-height: 2rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin: 20px 0;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    margin: 20px 0;
   }
 `;
 
@@ -135,9 +169,15 @@ export const Button = styled.div`
     transition: 100ms;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     width: auto;
-    line-height: normal;
     padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    width: auto;
+    padding: 20px;
+    font-size: 0.8rem;
   }
 `;

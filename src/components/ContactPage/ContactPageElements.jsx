@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
 const navBarHeight = '80px';
+const breakpoints = {
+  mobile: '480px',
+  tablet: '768px',
+  desktop: '1024px',
+};
 
 export const Container = styled.div`
   height: calc(100vh - ${navBarHeight});
@@ -16,8 +21,13 @@ export const Content = styled.div`
   height: 100%;
   padding: 20px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     flex-direction: column;
+    width: 100%;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    flex-direction: row;
     width: 100%;
   }
 `;
@@ -39,7 +49,7 @@ export const LeftPanel = styled.div`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     width: 100%;
   }
 `;
@@ -47,8 +57,12 @@ export const LeftPanel = styled.div`
 export const Image = styled.img`
   width: 50%;
 
-  @media screen and (max-width: 768px) {
-    width: 40%;
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    width: 70%;
   }
 `;
 
@@ -72,8 +86,16 @@ export const RightPanel = styled.div`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     width: 100%;
+    padding: 0 20px;
+    justify-content: start;
+    align-items: center;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    width: 50%;
+    padding: 0 20px;
   }
 `;
 
@@ -84,7 +106,11 @@ export const PageTitle = styled.div`
   font-weight: bold;
   letter-spacing: 2px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
     font-size: 2rem;
   }
 `;
@@ -94,7 +120,11 @@ export const ContentH1 = styled.div`
   font-size: 1.5rem;
   margin-top: 10px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 0.85rem;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
     font-size: 1rem;
   }
 `;
@@ -102,26 +132,40 @@ export const ContentH1 = styled.div`
 export const ContactTitle = styled.div`
   color: #dee2e6;
   font-size: 1.5rem;
-  margin: 30px 0 0;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   gap: 10px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 1.125rem;
-  }
-
+  
   svg {
-    font-size: 1.5rem;
     vertical-align: middle;
     color: #eec584;
   }
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 0.8rem;
+    margin-top: 15px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    font-size: 1rem;
+    margin-top: 20px;
+
+    svg {
+      width: 16px;    
+      height: 16px;
+    }
 `;
 
 export const ContactLink = styled.div`
   color: #dee2e6;
   font-size: 1.25rem;
-  margin: 15px 0 0;
+  margin-top: 15px;
   cursor: pointer;
   position: relative;
 
@@ -144,39 +188,13 @@ export const ContactLink = styled.div`
     transform: scaleX(1);
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
     font-size: 1rem;
+    margin-top: 10px;
   }
 `;
-
-// export const Button = styled.div`
-//   margin-top: 30px;
-//   cursor: pointer;
-//   padding: 17px 100px;
-//   border-radius: 50px;
-//   border: 0;
-//   background-color: #dee2e6;
-//   box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-//   letter-spacing: 1.5px;
-//   text-transform: uppercase;
-//   font-size: 15px;
-//   transition: all 0.5s ease;
-
-//   &:hover {
-//     letter-spacing: 3px;
-//     background-color: #f7b32b;
-//     color: #000814;
-//     box-shadow: #f7b32b 0px 7px 29px 0px;
-//     font-weight: bold;
-//   }
-
-//   &:active {
-//     transform: translateY(10px);
-//     transition: 100ms;
-//   }
-
-//   @media screen and (max-width: 768px) {
-//     margin-top: 15px;
-//     padding: 10px 50px;
-//   }
-// `;

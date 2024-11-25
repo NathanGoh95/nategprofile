@@ -2,6 +2,12 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
+const breakpoints = {
+  mobile: '480px',
+  tablet: '768px',
+  desktop: '1024px',
+};
+
 export const SideBarContainer = styled.aside`
   position: fixed;
   z-index: 999;
@@ -46,7 +52,7 @@ export const SideBarMenu = styled.ul`
   grid-template-rows: repeat(6, 80px);
   text-align: center;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     grid-template-rows: repeat(6, 60px);
   }
 `;

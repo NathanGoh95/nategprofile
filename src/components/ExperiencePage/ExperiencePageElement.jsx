@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
 const navBarHeight = '80px';
+const breakpoints = {
+  mobile: '480px',
+  tablet: '768px',
+  desktop: '1024px',
+};
 
 export const Container = styled.div`
   height: calc(100vh - ${navBarHeight});
@@ -17,8 +22,13 @@ export const Content = styled.div`
   height: 100%;
   padding: 20px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     flex-direction: column;
+    width: 100%;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    flex-direction: row;
     width: 100%;
   }
 `;
@@ -40,8 +50,9 @@ export const LeftPanel = styled.div`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     width: 100%;
+    height: 20%;
   }
 `;
 
@@ -51,8 +62,14 @@ export const DrawerContainer = styled.div`
   position: relative;
   transform: skewY(-15deg);
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     transform: skewY(0);
+    font-size: 1rem;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
   }
 `;
 
@@ -67,9 +84,11 @@ export const DrawerList = styled.div`
   transition: 0.5s;
   cursor: pointer;
 
-  @media screen and (max-width: 768px) {
-    width: 280px;
-    padding: 20px;
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    width: 250px;
+    padding: 10px;
+    margin-top: 5px;
+    align-items: center;
   }
 
   &:hover,
@@ -78,8 +97,8 @@ export const DrawerList = styled.div`
     background-color: #f7b32b;
     color: #000814;
 
-    @media screen and (max-width: 768px) {
-      transform: translateX(50px);
+    @media screen and (max-width: ${breakpoints.mobile}) {
+      transform: translateX(0);
     }
   }
 
@@ -99,6 +118,10 @@ export const DrawerList = styled.div`
     transform-origin: right;
     transform: skewY(45deg);
     transition: 0.5s;
+
+    @media screen and (max-width: ${breakpoints.mobile}) {
+      display: none;
+    }
   }
 
   &:hover::before,
@@ -118,6 +141,10 @@ export const DrawerList = styled.div`
     transform-origin: bottom;
     transform: skewX(45deg);
     transition: 0.5s;
+
+    @media screen and (max-width: ${breakpoints.mobile}) {
+      display: none;
+    }
   }
 
   &:hover::after,
@@ -150,8 +177,15 @@ export const RightPanel = styled.div`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     width: 100%;
+    padding: 0 20px;
+    justify-content: start;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    width: 50%;
+    padding: 0 20px;
   }
 `;
 
@@ -160,6 +194,14 @@ export const PageTitle = styled.div`
   font-size: 2.5rem;
   text-align: center;
   position: relative;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    font-size: 2rem;
+  }
 `;
 
 export const CompanyContainer = styled.div`
@@ -181,25 +223,43 @@ export const CompanyName = styled.div`
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 1rem;
+    margin: 20px 0 0;
+    letter-spacing: 1px;
+  }
 `;
 
 export const RoleContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 20px 0 0;
+  margin-top: 20px;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    margin-top: 10px;
+  }
 `;
 
 export const RoleTitle = styled.div`
   color: #dee2e6;
   font-size: 1.15rem;
   text-decoration: underline;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const RoleYear = styled.div`
   color: #dee2e6;
   font-size: 1.15rem;
   text-align: right;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const RoleDesc = styled.div`
@@ -207,6 +267,11 @@ export const RoleDesc = styled.div`
   font-size: 1rem;
   margin: 20px 0 0 30px;
   text-align: justify;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 0.8rem;
+    margin: 10px 10px 0;
+  }
 `;
 
 export const SkillContainer = styled.div`
@@ -219,6 +284,11 @@ export const SkillContainer = styled.div`
   height: 70%;
   padding: 20px;
   position: relative;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    grid-template-columns: repeat(2, 1fr);
+    height: 85%;
+  }
 `;
 
 export const SkillItem = styled.div`
@@ -237,6 +307,11 @@ export const SkillIcon = styled.img`
   max-height: 100%;
   background: transparent;
   vertical-align: middle;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 export const SkillLabel = styled.div`
@@ -244,6 +319,10 @@ export const SkillLabel = styled.div`
   font-size: 1rem;
   margin: 5px 0;
   text-align: center;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const ProjectContainer = styled.div`
@@ -268,6 +347,7 @@ export const ProjectImage = styled.img`
   margin-bottom: 20px;
   border-radius: 8px;
   object-fit: cover;
+  
 `;
 
 export const ProjectTitle = styled.div`
@@ -289,6 +369,15 @@ export const ProjectTitle = styled.div`
       color: #eec584;
     }
   }
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 1rem;
+
+    svg {
+      width: 14px;    
+      height: 14px;
+    }
+  }
 `;
 
 export const ProjectDesc = styled.div`
@@ -297,4 +386,8 @@ export const ProjectDesc = styled.div`
   margin: 20px 0 0;
   line-height: 1.6;
   text-align: justify;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 0.8rem;
+  }
 `;

@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 
+const breakpoints = {
+  mobile: '480px',
+  tablet: '768px',
+  desktop: '1024px',
+};
+
 export const Nav = styled.nav`
   background: #0d1321;
   height: 80px;
@@ -13,7 +19,7 @@ export const Nav = styled.nav`
   width: 100%;
   z-index: 10;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: ${breakpoints.tablet}) {
     transition: 0.8s all ease;
   }
 `;
@@ -31,7 +37,7 @@ export const NavbarContainer = styled.div`
 export const NavLogo = styled(LinkR)`
   color: #dee2e6;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,6 +51,10 @@ export const NavLogo = styled(LinkR)`
 
   &:hover #hide {
     max-width: 100%;
+  }
+
+  @media screen and (min-width: ${breakpoints.mobile}) and (max-width: ${breakpoints.desktop}) {
+    font-size: 1rem;
   }
 `;
 
@@ -60,7 +70,7 @@ export const HiddenDiv = styled.div`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     display: block;
     position: absolute;
     top: 0;
@@ -85,9 +95,12 @@ export const NavMenu = styled.ul`
   justify-content: space-between;
   width: 500px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     display: none;
   }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    width: 400px;}
 `;
 
 export const NavItem = styled.li`
@@ -101,7 +114,7 @@ export const NavLinks = styled(LinkR)`
   text-align: none;
   height: 100%;
   cursor: pointer;
-  font-size: 1.125rem;
+  font-size: 1.15rem;
   margin-right: 50px;
   text-decoration: none;
   transition: 0.5s ease;
@@ -111,4 +124,8 @@ export const NavLinks = styled(LinkR)`
   }
 
   border-bottom: ${(props) => (props.active ? '1px solid #f7b32b' : 'none')};
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    font-size: 1rem;
+  }
 `;

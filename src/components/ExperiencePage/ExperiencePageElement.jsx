@@ -52,7 +52,7 @@ export const LeftPanel = styled.div`
 
   @media screen and (max-width: ${breakpoints.mobile}) {
     width: 100%;
-    height: 20%;
+    height: 15%;
   }
 `;
 
@@ -61,9 +61,21 @@ export const DrawerContainer = styled.div`
   font-size: 1.25rem;
   position: relative;
   transform: skewY(-15deg);
+  display: flex;
+  flex-direction: column;
 
   @media screen and (max-width: ${breakpoints.mobile}) {
     transform: skewY(0);
+    font-size: 0.8rem;
+    flex-direction: row;
+    gap: 15px;
+
+    svg {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
     font-size: 1rem;
 
     svg {
@@ -85,10 +97,15 @@ export const DrawerList = styled.div`
   cursor: pointer;
 
   @media screen and (max-width: ${breakpoints.mobile}) {
-    width: 250px;
+    width: auto;
     padding: 10px;
     margin-top: 5px;
-    align-items: center;
+    border-radius: 5px;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    width: 250px;
+    padding: 20px;
   }
 
   &:hover,
@@ -185,7 +202,7 @@ export const RightPanel = styled.div`
 
   @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
     width: 50%;
-    padding: 0 20px;
+    padding: 20px 50px 20px 20px;
   }
 `;
 
@@ -214,7 +231,7 @@ export const CompanyContainer = styled.div`
 `;
 
 export const CompanyName = styled.div`
-  color: #eec584;
+  color: #dee2e6;
   font-size: 1.5rem;
   margin: 40px 30px 0;
   display: flex;
@@ -226,6 +243,12 @@ export const CompanyName = styled.div`
 
   @media screen and (max-width: ${breakpoints.mobile}) {
     font-size: 1rem;
+    margin: 20px 0 0;
+    letter-spacing: 1px;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    font-size: 1.2rem;
     margin: 20px 0 0;
     letter-spacing: 1px;
   }
@@ -243,12 +266,16 @@ export const RoleContainer = styled.div`
 `;
 
 export const RoleTitle = styled.div`
-  color: #dee2e6;
+  color: #eec584;
   font-size: 1.15rem;
   text-decoration: underline;
 
   @media screen and (max-width: ${breakpoints.mobile}) {
     font-size: 0.8rem;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    font-size: 1rem;
   }
 `;
 
@@ -259,6 +286,10 @@ export const RoleYear = styled.div`
 
   @media screen and (max-width: ${breakpoints.mobile}) {
     font-size: 0.8rem;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    font-size: 1rem;
   }
 `;
 
@@ -271,6 +302,10 @@ export const RoleDesc = styled.div`
   @media screen and (max-width: ${breakpoints.mobile}) {
     font-size: 0.8rem;
     margin: 10px 10px 0;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    font-size: 1rem;
   }
 `;
 
@@ -312,6 +347,11 @@ export const SkillIcon = styled.img`
     width: 50px;
     height: 50px;
   }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    width: 60px;
+    height: 60px;
+  }
 `;
 
 export const SkillLabel = styled.div`
@@ -321,6 +361,10 @@ export const SkillLabel = styled.div`
   text-align: center;
 
   @media screen and (max-width: ${breakpoints.mobile}) {
+    font-size: 0.8rem;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
     font-size: 0.8rem;
   }
 `;
@@ -337,8 +381,16 @@ export const ProjectContainer = styled.div`
 export const ImageContainer = styled.div`
   display: flex;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 `;
 
 export const ProjectImage = styled.img`
@@ -347,7 +399,15 @@ export const ProjectImage = styled.img`
   margin-bottom: 20px;
   border-radius: 8px;
   object-fit: cover;
-  
+  flex-shrink: 0;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    width: 250px;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    width: 300px;
+  }
 `;
 
 export const ProjectTitle = styled.div`
@@ -374,20 +434,27 @@ export const ProjectTitle = styled.div`
     font-size: 1rem;
 
     svg {
-      width: 14px;    
-      height: 14px;
+      width: 12px;    
+      height: 12px;
     }
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    font-size: 1rem;
   }
 `;
 
 export const ProjectDesc = styled.div`
   color: #dee2e6;
   font-size: 1rem;
-  margin: 20px 0 0;
   line-height: 1.6;
   text-align: justify;
 
   @media screen and (max-width: ${breakpoints.mobile}) {
     font-size: 0.8rem;
+  }
+
+  @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+    font-size: 1rem;
   }
 `;

@@ -225,10 +225,6 @@ const ExperiencePage = () => {
           {contentState === 'projects' && (
             <>
               <ProjectContainer>
-                <ImageContainer>
-                  <ProjectImage src='country_explorer_card.png' alt='country-explorer-card' />
-                  <ProjectImage src='country_explorer_list.png' alt='country-explorer-list' />
-                </ImageContainer>
                 <ProjectTitle>
                   Country Explorer (In Progress)
                   <LucideExternalLink
@@ -252,6 +248,10 @@ const ExperiencePage = () => {
                     }}
                   />
                 </ProjectTitle>
+                <ImageContainer>
+                  <ProjectImage src='country_explorer_card.png' alt='country-explorer-card' />
+                  <ProjectImage src='country_explorer_list.png' alt='country-explorer-list' />
+                </ImageContainer>
                 <ProjectDesc>
                   A responsive web application built with Next.js, Tailwind CSS, Material UI, and MobX, designed to explore global countries, facts, and data. The application integrates the REST Countries API to provide real-time information, allowing users to search for countries, filter by region, toggle between light and dark themes, and view countries in list or card formats. Currently still in progress to improve the user experience and optimization for mobile view.
                 </ProjectDesc>

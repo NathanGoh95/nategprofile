@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const navBarHeight = '80px';
 const breakpoints = {
-  mobile: '480px',
+  mobile: '430px',
   tablet: '768px',
   desktop: '1024px',
 }
@@ -12,6 +12,8 @@ export const Container = styled.div`
   height: calc(100vh - ${navBarHeight});
   margin-top: ${navBarHeight};
   padding: 20px;
+  overflow: hidden;
+  position: relative;
 
   @media screen and (min-width: ${breakpoints.desktop}) {
     padding: 40px;

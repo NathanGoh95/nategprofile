@@ -82,9 +82,9 @@ const ExperiencePage = () => {
             <>
               <CompanyContainer>
                 <div>
-                  <CompanyName>Accendo Technologies</CompanyName>
+                  <CompanyName>Software Engineer (Frontend)</CompanyName>
                   <RoleContainer>
-                    <RoleTitle>Software Engineer (Frontend)</RoleTitle>
+                    <RoleTitle>Accendo Technologies</RoleTitle>
                     <RoleYear>2024 - Present</RoleYear>
                   </RoleContainer>
                   <RoleDesc>
@@ -110,9 +110,9 @@ const ExperiencePage = () => {
                   </RoleDesc>
                 </div>
                 <div>
-                  <CompanyName>Kibing Group Malaysia</CompanyName>
+                  <CompanyName>Process Coordinator</CompanyName>
                   <RoleContainer>
-                    <RoleTitle>Process Coordinator</RoleTitle>
+                    <RoleTitle>Kibing Group Malaysia</RoleTitle>
                     <RoleYear>2022 - 2024</RoleYear>
                   </RoleContainer>
                   <RoleDesc>
@@ -134,9 +134,9 @@ const ExperiencePage = () => {
                   </RoleDesc>
                 </div>
                 <div>
-                  <CompanyName>Daikin Malaysia Sales & Services</CompanyName>
+                  <CompanyName>Service Provider Support</CompanyName>
                   <RoleContainer>
-                    <RoleTitle>Service Provider Support</RoleTitle>
+                    <RoleTitle>Daikin Malaysia Sales & Services</RoleTitle>
                     <RoleYear>2021 - 2022</RoleYear>
                   </RoleContainer>
                   <RoleDesc>
@@ -157,9 +157,9 @@ const ExperiencePage = () => {
                   </RoleDesc>
                 </div>
                 <div>
-                  <CompanyName>Matrix Concepts Sdn Bhd</CompanyName>
+                  <CompanyName>Sales Support & Marketing</CompanyName>
                   <RoleContainer>
-                    <RoleTitle>Sales Support & Marketing</RoleTitle>
+                    <RoleTitle>Matrix Concepts Sdn Bhd</RoleTitle>
                     <RoleYear>2018 - 2020</RoleYear>
                   </RoleContainer>
                   <RoleDesc>
@@ -253,7 +253,12 @@ const ExperiencePage = () => {
                   <ProjectImage src='country_explorer_list.png' alt='country-explorer-list' />
                 </ImageContainer>
                 <ProjectDesc>
-                  A responsive web application built with Next.js, Tailwind CSS, Material UI, and MobX, designed to explore global countries, facts, and data. The application integrates the REST Countries API to provide real-time information, allowing users to search for countries, filter by region, toggle between light and dark themes, and view countries in list or card formats. Currently still in progress to improve the user experience and optimization for mobile view.
+                  A responsive web application built with Next.js, Tailwind CSS, Material UI, and
+                  MobX, designed to explore global countries, facts, and data. The application
+                  integrates the REST Countries API to provide real-time information, allowing users
+                  to search for countries, filter by region, toggle between light and dark themes,
+                  and view countries in list or card formats. Currently still in progress to improve
+                  the user experience and optimization for mobile view.
                 </ProjectDesc>
               </ProjectContainer>
             </>

@@ -3,7 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
 const breakpoints = {
-  mobile: '480px',
+  mobile: '430px',
   tablet: '768px',
   desktop: '1024px',
 };

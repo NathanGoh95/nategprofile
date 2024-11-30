@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const navBarHeight = '80px';
 const breakpoints = {
-  mobile: '480px',
+  mobile: '430px',
   tablet: '768px',
   desktop: '1024px',
 };
@@ -20,6 +20,8 @@ export const Content = styled.div`
   width: 100%;
   height: 100%;
   padding: 20px;
+  overflow: hidden;
+  position: relative;
 
   @media screen and (max-width: ${breakpoints.mobile}) {
     flex-direction: column;
@@ -50,6 +52,7 @@ export const LeftPanel = styled.div`
   }
 
   @media screen and (max-width: ${breakpoints.mobile}) {
+    height: 50%;
     width: 100%;
   }
 `;

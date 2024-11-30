@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const navBarHeight = '80px';
 const breakpoints = {
-  mobile: '480px',
+  mobile: '430px',
   tablet: '768px',
   desktop: '1024px',
 };
@@ -11,6 +11,8 @@ export const Container = styled.div`
   height: calc(100vh - ${navBarHeight});
   overflow: hidden;
   margin-top: ${navBarHeight};
+  overflow: hidden;
+  position: relative;
 `;
 
 export const Content = styled.div`
@@ -52,7 +54,7 @@ export const LeftPanel = styled.div`
 
   @media screen and (max-width: ${breakpoints.mobile}) {
     width: 100%;
-    height: 15%;
+    height: 10%;
   }
 `;
 
@@ -231,20 +233,21 @@ export const CompanyContainer = styled.div`
 `;
 
 export const CompanyName = styled.div`
-  color: #dee2e6;
+  color: #eec584;
+  // color: #dee2e6;
   font-size: 1.5rem;
   margin: 40px 30px 0;
   display: flex;
   justify-content: center;
   position: relative;
   text-transform: uppercase;
+  text-decoration: underline;
   font-weight: bold;
   letter-spacing: 2px;
 
   @media screen and (max-width: ${breakpoints.mobile}) {
     font-size: 1rem;
     margin: 20px 0 0;
-    letter-spacing: 1px;
   }
 
   @media screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
@@ -266,9 +269,9 @@ export const RoleContainer = styled.div`
 `;
 
 export const RoleTitle = styled.div`
-  color: #eec584;
+  color: #dee2e6;
   font-size: 1.15rem;
-  text-decoration: underline;
+  // text-decoration: underline;
 
   @media screen and (max-width: ${breakpoints.mobile}) {
     font-size: 0.8rem;
@@ -376,6 +379,11 @@ export const ProjectContainer = styled.div`
   flex-direction: column;
   justify-self: center;
   align-items: start;
+
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    width: 100%;
+    height: 85%;
+  }
 `;
 
 export const ImageContainer = styled.div`

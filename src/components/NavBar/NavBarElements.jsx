@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 
 const breakpoints = {
-  mobile: '480px',
+  mobile: '430px',
   tablet: '768px',
   desktop: '1024px',
 };

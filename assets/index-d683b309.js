@@ -67,7 +67,7 @@ Error generating stack: `+o.message+`
  * LICENSE.md file in the root directory of this source tree.
  *
  * @license MIT
- */function Pa(){return Pa=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Pa.apply(this,arguments)}function ag(e,t){if(e==null)return{};var n={},r=Object.keys(e),i,o;for(o=0;o<r.length;o++)i=r[o],!(t.indexOf(i)>=0)&&(n[i]=e[i]);return n}function sg(e){return!!(e.metaKey||e.altKey||e.ctrlKey||e.shiftKey)}function ug(e,t){return e.button===0&&(!t||t==="_self")&&!sg(e)}const cg=["onClick","relative","reloadDocument","replace","state","target","to","preventScrollReset","unstable_viewTransition"],dg="startTransition",tc=jp[dg];function fg(e){let{basename:t,children:n,future:r,window:i}=e,o=N.useRef();o.current==null&&(o.current=V0({window:i,v5Compat:!0}));let l=o.current,[a,s]=N.useState({action:l.action,location:l.location}),{v7_startTransition:u}=r||{},m=N.useCallback(g=>{u&&tc?tc(()=>s(g)):s(g)},[s,u]);return N.useLayoutEffect(()=>l.listen(m),[l,m]),N.createElement(lg,{basename:t,children:n,location:a.location,navigationType:a.action,navigator:l})}const pg=typeof window<"u"&&typeof window.document<"u"&&typeof window.document.createElement<"u",hg=/^(?:[a-z][a-z0-9+.-]*:|\/\/)/i,_s=N.forwardRef(function(t,n){let{onClick:r,relative:i,reloadDocument:o,replace:l,state:a,target:s,to:u,preventScrollReset:m,unstable_viewTransition:g}=t,p=ag(t,cg),{basename:y}=N.useContext(Zr),w,x=!1;if(typeof u=="string"&&hg.test(u)&&(w=u,pg))try{let f=new URL(window.location.href),v=u.startsWith("//")?new URL(f.protocol+u):new URL(u),C=Jf(v.pathname,y);v.origin===f.origin&&C!=null?u=C+v.search+v.hash:x=!0}catch{}let _=b0(u,{relative:i}),d=mg(u,{replace:l,state:a,target:s,preventScrollReset:m,relative:i,unstable_viewTransition:g});function c(f){r&&r(f),f.defaultPrevented||d(f)}return N.createElement("a",Pa({},p,{href:w||_,onClick:x||o?r:c,ref:n,target:s}))});var nc;(function(e){e.UseScrollRestoration="useScrollRestoration",e.UseSubmit="useSubmit",e.UseSubmitFetcher="useSubmitFetcher",e.UseFetcher="useFetcher",e.useViewTransitionState="useViewTransitionState"})(nc||(nc={}));var rc;(function(e){e.UseFetcher="useFetcher",e.UseFetchers="useFetchers",e.UseScrollRestoration="useScrollRestoration"})(rc||(rc={}));function mg(e,t){let{target:n,replace:r,state:i,preventScrollReset:o,relative:l,unstable_viewTransition:a}=t===void 0?{}:t,s=eg(),u=js(),m=ip(e,{relative:l});return N.useCallback(g=>{if(ug(g,n)){g.preventDefault();let p=r!==void 0?r:ho(u)===ho(m);s(e,{replace:p,state:i,preventScrollReset:o,relative:l,unstable_viewTransition:a})}},[u,s,m,r,i,n,e,o,l,a])}const pt={mobile:"480px",tablet:"768px",desktop:"1024px"},gg=$.nav`
+ */function Pa(){return Pa=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Pa.apply(this,arguments)}function ag(e,t){if(e==null)return{};var n={},r=Object.keys(e),i,o;for(o=0;o<r.length;o++)i=r[o],!(t.indexOf(i)>=0)&&(n[i]=e[i]);return n}function sg(e){return!!(e.metaKey||e.altKey||e.ctrlKey||e.shiftKey)}function ug(e,t){return e.button===0&&(!t||t==="_self")&&!sg(e)}const cg=["onClick","relative","reloadDocument","replace","state","target","to","preventScrollReset","unstable_viewTransition"],dg="startTransition",tc=jp[dg];function fg(e){let{basename:t,children:n,future:r,window:i}=e,o=N.useRef();o.current==null&&(o.current=V0({window:i,v5Compat:!0}));let l=o.current,[a,s]=N.useState({action:l.action,location:l.location}),{v7_startTransition:u}=r||{},m=N.useCallback(g=>{u&&tc?tc(()=>s(g)):s(g)},[s,u]);return N.useLayoutEffect(()=>l.listen(m),[l,m]),N.createElement(lg,{basename:t,children:n,location:a.location,navigationType:a.action,navigator:l})}const pg=typeof window<"u"&&typeof window.document<"u"&&typeof window.document.createElement<"u",hg=/^(?:[a-z][a-z0-9+.-]*:|\/\/)/i,_s=N.forwardRef(function(t,n){let{onClick:r,relative:i,reloadDocument:o,replace:l,state:a,target:s,to:u,preventScrollReset:m,unstable_viewTransition:g}=t,p=ag(t,cg),{basename:y}=N.useContext(Zr),w,x=!1;if(typeof u=="string"&&hg.test(u)&&(w=u,pg))try{let f=new URL(window.location.href),v=u.startsWith("//")?new URL(f.protocol+u):new URL(u),C=Jf(v.pathname,y);v.origin===f.origin&&C!=null?u=C+v.search+v.hash:x=!0}catch{}let _=b0(u,{relative:i}),d=mg(u,{replace:l,state:a,target:s,preventScrollReset:m,relative:i,unstable_viewTransition:g});function c(f){r&&r(f),f.defaultPrevented||d(f)}return N.createElement("a",Pa({},p,{href:w||_,onClick:x||o?r:c,ref:n,target:s}))});var nc;(function(e){e.UseScrollRestoration="useScrollRestoration",e.UseSubmit="useSubmit",e.UseSubmitFetcher="useSubmitFetcher",e.UseFetcher="useFetcher",e.useViewTransitionState="useViewTransitionState"})(nc||(nc={}));var rc;(function(e){e.UseFetcher="useFetcher",e.UseFetchers="useFetchers",e.UseScrollRestoration="useScrollRestoration"})(rc||(rc={}));function mg(e,t){let{target:n,replace:r,state:i,preventScrollReset:o,relative:l,unstable_viewTransition:a}=t===void 0?{}:t,s=eg(),u=js(),m=ip(e,{relative:l});return N.useCallback(g=>{if(ug(g,n)){g.preventDefault();let p=r!==void 0?r:ho(u)===ho(m);s(e,{replace:p,state:i,preventScrollReset:o,relative:l,unstable_viewTransition:a})}},[u,s,m,r,i,n,e,o,l,a])}const pt={mobile:"430px",tablet:"768px",desktop:"1024px"},gg=$.nav`
   background: #0d1321;
   height: 80px;
   display: flex;
@@ -174,7 +174,7 @@ Error generating stack: `+o.message+`
   @media screen and (min-width: ${pt.tablet}) and (max-width: ${pt.desktop}) {
     font-size: 1rem;
   }
-`,bn=N.createContext(),kg=({children:e})=>{const[t,n]=N.useState("default"),[r,i]=N.useState(!1),o=()=>{i(!r)},[l,a]=N.useState(""),[s,u]=N.useState(""),m={pageState:t,setPageState:n,isOpen:r,toggle:o,contentState:l,setContentState:a,activeDrawer:s,setActiveDrawer:u};return h.jsx(bn.Provider,{value:m,children:e})},Sg=()=>{const{pageState:e,setPageState:t,toggle:n}=N.useContext(bn);return h.jsx(h.Fragment,{children:h.jsx(gg,{children:h.jsxs(vg,{children:[h.jsxs(yg,{onClick:()=>t("default"),children:["N",h.jsx(ic,{id:"hide",children:"athan"}),".G",h.jsx(ic,{id:"hide",children:"oh"})]}),h.jsx(wg,{onClick:()=>n(),children:h.jsx(Fm,{})}),h.jsxs(xg,{children:[h.jsx(yl,{children:h.jsx(wl,{onClick:()=>t("about-me"),active:e==="about-me",children:"About Me"})}),h.jsx(yl,{children:h.jsx(wl,{onClick:()=>t("experience"),active:e==="experience",children:"Experience"})}),h.jsx(yl,{children:h.jsx(wl,{onClick:()=>t("contact"),active:e==="contact",children:"Contact"})})]})]})})})},Cg={mobile:"480px",tablet:"768px",desktop:"1024px"},Eg=$.aside`
+`,bn=N.createContext(),kg=({children:e})=>{const[t,n]=N.useState("default"),[r,i]=N.useState(!1),o=()=>{i(!r)},[l,a]=N.useState(""),[s,u]=N.useState(""),m={pageState:t,setPageState:n,isOpen:r,toggle:o,contentState:l,setContentState:a,activeDrawer:s,setActiveDrawer:u};return h.jsx(bn.Provider,{value:m,children:e})},Sg=()=>{const{pageState:e,setPageState:t,toggle:n}=N.useContext(bn);return h.jsx(h.Fragment,{children:h.jsx(gg,{children:h.jsxs(vg,{children:[h.jsxs(yg,{onClick:()=>t("default"),children:["N",h.jsx(ic,{id:"hide",children:"athan"}),".G",h.jsx(ic,{id:"hide",children:"oh"})]}),h.jsx(wg,{onClick:()=>n(),children:h.jsx(Fm,{})}),h.jsxs(xg,{children:[h.jsx(yl,{children:h.jsx(wl,{onClick:()=>t("about-me"),active:e==="about-me",children:"About Me"})}),h.jsx(yl,{children:h.jsx(wl,{onClick:()=>t("experience"),active:e==="experience",children:"Experience"})}),h.jsx(yl,{children:h.jsx(wl,{onClick:()=>t("contact"),active:e==="contact",children:"Contact"})})]})]})})})},Cg={mobile:"430px",tablet:"768px",desktop:"1024px"},Eg=$.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -229,11 +229,13 @@ Error generating stack: `+o.message+`
     color: #ffc300;
     transition: 0.2s ease-in-out;
   }
-`,zg=()=>{const{isOpen:e,toggle:t,setPageState:n}=N.useContext(bn);return h.jsxs(Eg,{isOpen:e,onClick:t,children:[h.jsx(jg,{onClick:()=>t(),children:h.jsx(Pg,{})}),h.jsx(_g,{children:h.jsxs($g,{children:[h.jsx(xl,{onClick:()=>n("about-me"),children:"About Me"}),h.jsx(xl,{onClick:()=>n("experience"),children:"Experience"}),h.jsx(xl,{onClick:()=>n("contact"),children:"Contact"})]})})]})},oc="80px",ce={mobile:"480px",tablet:"768px",desktop:"1024px"},Ng=$.div`
+`,zg=()=>{const{isOpen:e,toggle:t,setPageState:n}=N.useContext(bn);return h.jsxs(Eg,{isOpen:e,onClick:t,children:[h.jsx(jg,{onClick:()=>t(),children:h.jsx(Pg,{})}),h.jsx(_g,{children:h.jsxs($g,{children:[h.jsx(xl,{onClick:()=>n("about-me"),children:"About Me"}),h.jsx(xl,{onClick:()=>n("experience"),children:"Experience"}),h.jsx(xl,{onClick:()=>n("contact"),children:"Contact"})]})})]})},oc="80px",ce={mobile:"430px",tablet:"768px",desktop:"1024px"},Ng=$.div`
   background: #0d1321;
   height: calc(100vh - ${oc});
   margin-top: ${oc};
   padding: 20px;
+  overflow: hidden;
+  position: relative;
 
   @media screen and (min-width: ${ce.desktop}) {
     padding: 40px;
@@ -351,7 +353,7 @@ Error generating stack: `+o.message+`
     width: 180px;
     font-size: 0.8rem;
   }
-`,Og=()=>{const{setPageState:e}=N.useContext(bn);return h.jsx(Ng,{children:h.jsxs(Lg,{children:[h.jsx(lc,{children:"Hello, my name is"}),h.jsx(Tg,{children:"Nathan Goh"}),h.jsx(lc,{children:"Frontend Web Developer"}),h.jsxs(Rg,{children:[h.jsx(ac,{onClick:()=>e("about-me"),children:"About Me"}),h.jsx(ac,{onClick:()=>e("contact"),children:"Contact Me"})]})]})})},sc="80px",ie={mobile:"480px",tablet:"768px",desktop:"1024px"},Ig=$.div`
+`,Og=()=>{const{setPageState:e}=N.useContext(bn);return h.jsx(Ng,{children:h.jsxs(Lg,{children:[h.jsx(lc,{children:"Hello, my name is"}),h.jsx(Tg,{children:"Nathan Goh"}),h.jsx(lc,{children:"Frontend Web Developer"}),h.jsxs(Rg,{children:[h.jsx(ac,{onClick:()=>e("about-me"),children:"About Me"}),h.jsx(ac,{onClick:()=>e("contact"),children:"Contact Me"})]})]})})},sc="80px",ie={mobile:"430px",tablet:"768px",desktop:"1024px"},Ig=$.div`
   height: calc(100vh - ${sc});
   margin-top: ${sc};
 `,Mg=$.div`
@@ -362,6 +364,8 @@ Error generating stack: `+o.message+`
   width: 100%;
   height: 100%;
   padding: 20px;
+  overflow: hidden;
+  position: relative;
 
   @media screen and (max-width: ${ie.mobile}) {
     flex-direction: column;
@@ -390,6 +394,7 @@ Error generating stack: `+o.message+`
   }
 
   @media screen and (max-width: ${ie.mobile}) {
+    height: 50%;
     width: 100%;
   }
 `,Ag=$.img`
@@ -510,10 +515,12 @@ Error generating stack: `+o.message+`
     padding: 20px;
     font-size: 0.8rem;
   }
-`,uc="/nategprofile/assets/Resume_Nathan_Goh-9334d0dd.pdf",Hg=()=>h.jsx(Ig,{children:h.jsxs(Mg,{children:[h.jsx(Dg,{children:h.jsx(Ag,{src:"aboutme.png",alt:"aboutme-img"})}),h.jsxs(Fg,{children:[h.jsx(Ug,{children:"About Me"}),h.jsx(Bg,{children:"I’ve recently transitioned into the tech industry, focusing on frontend development through self-teaching and continuous learning. After completing an internship, I continued working with the same team, gaining additional valuable hands-on experience. This has deepened my passion for creating seamless, user-friendly digital solutions, and I’m committed to further improving my skills. I’m eager to contribute to impactful projects, collaborate with talented professionals, and continue growing in a dynamic and innovative environment."}),h.jsx(Wg,{href:uc,onClick:e=>{e.preventDefault(),window.open(uc,"_blank","noopener, noreferrer")},children:"Download Resume"})]})]})}),cc="80px",L={mobile:"480px",tablet:"768px",desktop:"1024px"},Vg=$.div`
+`,uc="/nategprofile/assets/Resume_Nathan_Goh-9334d0dd.pdf",Hg=()=>h.jsx(Ig,{children:h.jsxs(Mg,{children:[h.jsx(Dg,{children:h.jsx(Ag,{src:"aboutme.png",alt:"aboutme-img"})}),h.jsxs(Fg,{children:[h.jsx(Ug,{children:"About Me"}),h.jsx(Bg,{children:"I’ve recently transitioned into the tech industry, focusing on frontend development through self-teaching and continuous learning. After completing an internship, I continued working with the same team, gaining additional valuable hands-on experience. This has deepened my passion for creating seamless, user-friendly digital solutions, and I’m committed to further improving my skills. I’m eager to contribute to impactful projects, collaborate with talented professionals, and continue growing in a dynamic and innovative environment."}),h.jsx(Wg,{href:uc,onClick:e=>{e.preventDefault(),window.open(uc,"_blank","noopener, noreferrer")},children:"Download Resume"})]})]})}),cc="80px",L={mobile:"430px",tablet:"768px",desktop:"1024px"},Vg=$.div`
   height: calc(100vh - ${cc});
   overflow: hidden;
   margin-top: ${cc};
+  overflow: hidden;
+  position: relative;
 `,Qg=$.div`
   background-color: #000814;
   display: flex;
@@ -551,7 +558,7 @@ Error generating stack: `+o.message+`
 
   @media screen and (max-width: ${L.mobile}) {
     width: 100%;
-    height: 15%;
+    height: 10%;
   }
 `,Yg=$.div`
   color: #eec584;
@@ -718,20 +725,21 @@ Error generating stack: `+o.message+`
   align-items: center;
   justify-content: center;
 `,vi=$.div`
-  color: #dee2e6;
+  color: #eec584;
+  // color: #dee2e6;
   font-size: 1.5rem;
   margin: 40px 30px 0;
   display: flex;
   justify-content: center;
   position: relative;
   text-transform: uppercase;
+  text-decoration: underline;
   font-weight: bold;
   letter-spacing: 2px;
 
   @media screen and (max-width: ${L.mobile}) {
     font-size: 1rem;
     margin: 20px 0 0;
-    letter-spacing: 1px;
   }
 
   @media screen and (min-width: ${L.tablet}) and (max-width: ${L.desktop}) {
@@ -749,9 +757,9 @@ Error generating stack: `+o.message+`
     margin-top: 10px;
   }
 `,wi=$.div`
-  color: #eec584;
+  color: #dee2e6;
   font-size: 1.15rem;
-  text-decoration: underline;
+  // text-decoration: underline;
 
   @media screen and (max-width: ${L.mobile}) {
     font-size: 0.8rem;
@@ -845,6 +853,11 @@ Error generating stack: `+o.message+`
   flex-direction: column;
   justify-self: center;
   align-items: start;
+
+  @media screen and (max-width: ${L.mobile}) {
+    width: 100%;
+    height: 85%;
+  }
 `,qg=$.div`
   display: flex;
   gap: 20px;
@@ -968,9 +981,11 @@ Error generating stack: `+o.message+`
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const m1=er("Phone",[["path",{d:"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z",key:"foiqr5"}]]),Pt={reactLogo:t1,nextjsLogo:n1,javascriptLogo:r1,typescriptLogo:i1,htmlLogo:o1,cssLogo:l1,tailwindLogo:a1,mobxLogo:s1},g1=()=>{const{setContentState:e,contentState:t,activeDrawer:n,setActiveDrawer:r}=N.useContext(bn),i=o=>{e(o),r(o)};return h.jsx(Vg,{children:h.jsxs(Qg,{children:[h.jsx(Kg,{children:h.jsxs(Yg,{children:[h.jsxs(kl,{onClick:()=>i("workExperience"),className:n==="workExperience"?"active":"",children:["Work Experience",h.jsx(Sl,{})]}),h.jsxs(kl,{onClick:()=>i("professionalSkills"),className:n==="professionalSkills"?"active":"",children:["Professional Skills",h.jsx(Sl,{})]}),h.jsxs(kl,{onClick:()=>i("projects"),className:n==="projects"?"active":"",children:["Projects",h.jsx(Sl,{})]})]})}),h.jsxs(Gg,{children:[t==="workExperience"&&h.jsx(h.Fragment,{children:h.jsxs(Xg,{children:[h.jsxs("div",{children:[h.jsx(vi,{children:"Accendo Technologies"}),h.jsxs(yi,{children:[h.jsx(wi,{children:"Software Engineer (Frontend)"}),h.jsx(xi,{children:"2024 - Present"})]}),h.jsx(se,{children:"• Developed and optimized frontend features using Next.js, TypeScript, Tailwind CSS, and MobX, significantly enhancing rendering efficiency and application performance"}),h.jsx(se,{children:"• Integrated APIs to enable seamless data flow and dynamic content rendering, boosting interactivity and user engagement"}),h.jsx(se,{children:"• Collaborated with stakeholders and designers to create user-friendly enhancements, directly improving users’ experience"}),h.jsx(se,{children:"• Actively participated in agile processes, including sprint planning and stand-ups, contributing to an improvement in feature delivery timelines"}),h.jsx(se,{children:"• Implemented proactive testing and debugging, reducing bug reports and increasing overall product stability"})]}),h.jsxs("div",{children:[h.jsx(vi,{children:"Kibing Group Malaysia"}),h.jsxs(yi,{children:[h.jsx(wi,{children:"Process Coordinator"}),h.jsx(xi,{children:"2022 - 2024"})]}),h.jsx(se,{children:"• Supported the Technical Director as a personal assistant, handling documentation and coordinating daily administrative tasks to streamline operations"}),h.jsx(se,{children:"• Facilitated communication across departments, ensuring the efficient execution of directives from HQ"}),h.jsx(se,{children:"• Established and maintained standardized documentation and workflows, reducing process inconsistencies and improving operational efficiency"}),h.jsx(se,{children:"• Prepared and presented essential departmental documentation like teahnical reports for senior management"})]}),h.jsxs("div",{children:[h.jsx(vi,{children:"Daikin Malaysia Sales & Services"}),h.jsxs(yi,{children:[h.jsx(wi,{children:"Service Provider Support"}),h.jsx(xi,{children:"2021 - 2022"})]}),h.jsx(se,{children:"• Managed the onboarding and training of service providers, ensuring consistent service quality nationwide"}),h.jsx(se,{children:"• Converted 20+ suppliers to authorized service providers, expanding service reach and ensuring resource availability"}),h.jsx(se,{children:"• Provided support for service providers and handled customer inquiries, enhancing both service quality and customer satisfaction"}),h.jsx(se,{children:"• Oversaw the E-commerce platform on customer service and ensuring accurate stock management"})]}),h.jsxs("div",{children:[h.jsx(vi,{children:"Matrix Concepts Sdn Bhd"}),h.jsxs(yi,{children:[h.jsx(wi,{children:"Sales Support & Marketing"}),h.jsx(xi,{children:"2018 - 2020"})]}),h.jsx(se,{children:"• Developed targeted marketing campaigns that achieved 80% sales for assigned projects, effectively reaching targetted buyer demographics"}),h.jsx(se,{children:"• Organized large-scale annual events and property exhibitions, driving walk-in traffic and potential buyers"}),h.jsx(se,{children:"• Ensured marketing collateral availability, coordinating materials like scale models and brochures to optimize promotional efforts"}),h.jsx(se,{children:"• Compiled and analyzed daily sales records, providing valuable insights for strategic planning"})]})]})}),t==="professionalSkills"&&h.jsx(h.Fragment,{children:h.jsxs(Zg,{children:[h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.reactLogo,alt:"react-logo"}),h.jsx(Et,{children:"React"})]}),h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.nextjsLogo,alt:"nextjs-logo"}),h.jsx(Et,{children:"Next.js"})]}),h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.javascriptLogo,alt:"javascript-logo"}),h.jsx(Et,{children:"JavaScript"})]}),h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.typescriptLogo,alt:"typescript-logo"}),h.jsx(Et,{children:"TypeScript"})]}),h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.htmlLogo,alt:"html-logo"}),h.jsx(Et,{children:"HTML"})]}),h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.cssLogo,alt:"css-logo"}),h.jsx(Et,{children:"CSS"})]}),h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.tailwindLogo,alt:"tailwind-logo"}),h.jsx(Et,{children:"Tailwind CSS"})]}),h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.mobxLogo,alt:"mobx-logo"}),h.jsx(Et,{children:"MobX"})]})]})}),t==="projects"&&h.jsx(h.Fragment,{children:h.jsxs(Jg,{children:[h.jsxs(bg,{children:["Country Explorer (In Progress)",h.jsx(f1,{onClick:o=>{o.preventDefault(),window.open("https://accendo-countriesinfo.vercel.app/","_blank","noopener, noreferrer")}}),h.jsx(sp,{onClick:o=>{o.preventDefault(),window.open("https://github.com/NathanGoh95/accendo-countriesinfo","_blank","noopener, noreferrer")}})]}),h.jsxs(qg,{children:[h.jsx(dc,{src:"country_explorer_card.png",alt:"country-explorer-card"}),h.jsx(dc,{src:"country_explorer_list.png",alt:"country-explorer-list"})]}),h.jsx(e1,{children:"A responsive web application built with Next.js, Tailwind CSS, Material UI, and MobX, designed to explore global countries, facts, and data. The application integrates the REST Countries API to provide real-time information, allowing users to search for countries, filter by region, toggle between light and dark themes, and view countries in list or card formats. Currently still in progress to improve the user experience and optimization for mobile view."})]})})]})]})})},fc="80px",J={mobile:"480px",tablet:"768px",desktop:"1024px"},v1=$.div`
+ */const m1=er("Phone",[["path",{d:"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z",key:"foiqr5"}]]),Pt={reactLogo:t1,nextjsLogo:n1,javascriptLogo:r1,typescriptLogo:i1,htmlLogo:o1,cssLogo:l1,tailwindLogo:a1,mobxLogo:s1},g1=()=>{const{setContentState:e,contentState:t,activeDrawer:n,setActiveDrawer:r}=N.useContext(bn),i=o=>{e(o),r(o)};return h.jsx(Vg,{children:h.jsxs(Qg,{children:[h.jsx(Kg,{children:h.jsxs(Yg,{children:[h.jsxs(kl,{onClick:()=>i("workExperience"),className:n==="workExperience"?"active":"",children:["Work Experience",h.jsx(Sl,{})]}),h.jsxs(kl,{onClick:()=>i("professionalSkills"),className:n==="professionalSkills"?"active":"",children:["Professional Skills",h.jsx(Sl,{})]}),h.jsxs(kl,{onClick:()=>i("projects"),className:n==="projects"?"active":"",children:["Projects",h.jsx(Sl,{})]})]})}),h.jsxs(Gg,{children:[t==="workExperience"&&h.jsx(h.Fragment,{children:h.jsxs(Xg,{children:[h.jsxs("div",{children:[h.jsx(vi,{children:"Software Engineer (Frontend)"}),h.jsxs(yi,{children:[h.jsx(wi,{children:"Accendo Technologies"}),h.jsx(xi,{children:"2024 - Present"})]}),h.jsx(se,{children:"• Developed and optimized frontend features using Next.js, TypeScript, Tailwind CSS, and MobX, significantly enhancing rendering efficiency and application performance"}),h.jsx(se,{children:"• Integrated APIs to enable seamless data flow and dynamic content rendering, boosting interactivity and user engagement"}),h.jsx(se,{children:"• Collaborated with stakeholders and designers to create user-friendly enhancements, directly improving users’ experience"}),h.jsx(se,{children:"• Actively participated in agile processes, including sprint planning and stand-ups, contributing to an improvement in feature delivery timelines"}),h.jsx(se,{children:"• Implemented proactive testing and debugging, reducing bug reports and increasing overall product stability"})]}),h.jsxs("div",{children:[h.jsx(vi,{children:"Process Coordinator"}),h.jsxs(yi,{children:[h.jsx(wi,{children:"Kibing Group Malaysia"}),h.jsx(xi,{children:"2022 - 2024"})]}),h.jsx(se,{children:"• Supported the Technical Director as a personal assistant, handling documentation and coordinating daily administrative tasks to streamline operations"}),h.jsx(se,{children:"• Facilitated communication across departments, ensuring the efficient execution of directives from HQ"}),h.jsx(se,{children:"• Established and maintained standardized documentation and workflows, reducing process inconsistencies and improving operational efficiency"}),h.jsx(se,{children:"• Prepared and presented essential departmental documentation like teahnical reports for senior management"})]}),h.jsxs("div",{children:[h.jsx(vi,{children:"Service Provider Support"}),h.jsxs(yi,{children:[h.jsx(wi,{children:"Daikin Malaysia Sales & Services"}),h.jsx(xi,{children:"2021 - 2022"})]}),h.jsx(se,{children:"• Managed the onboarding and training of service providers, ensuring consistent service quality nationwide"}),h.jsx(se,{children:"• Converted 20+ suppliers to authorized service providers, expanding service reach and ensuring resource availability"}),h.jsx(se,{children:"• Provided support for service providers and handled customer inquiries, enhancing both service quality and customer satisfaction"}),h.jsx(se,{children:"• Oversaw the E-commerce platform on customer service and ensuring accurate stock management"})]}),h.jsxs("div",{children:[h.jsx(vi,{children:"Sales Support & Marketing"}),h.jsxs(yi,{children:[h.jsx(wi,{children:"Matrix Concepts Sdn Bhd"}),h.jsx(xi,{children:"2018 - 2020"})]}),h.jsx(se,{children:"• Developed targeted marketing campaigns that achieved 80% sales for assigned projects, effectively reaching targetted buyer demographics"}),h.jsx(se,{children:"• Organized large-scale annual events and property exhibitions, driving walk-in traffic and potential buyers"}),h.jsx(se,{children:"• Ensured marketing collateral availability, coordinating materials like scale models and brochures to optimize promotional efforts"}),h.jsx(se,{children:"• Compiled and analyzed daily sales records, providing valuable insights for strategic planning"})]})]})}),t==="professionalSkills"&&h.jsx(h.Fragment,{children:h.jsxs(Zg,{children:[h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.reactLogo,alt:"react-logo"}),h.jsx(Et,{children:"React"})]}),h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.nextjsLogo,alt:"nextjs-logo"}),h.jsx(Et,{children:"Next.js"})]}),h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.javascriptLogo,alt:"javascript-logo"}),h.jsx(Et,{children:"JavaScript"})]}),h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.typescriptLogo,alt:"typescript-logo"}),h.jsx(Et,{children:"TypeScript"})]}),h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.htmlLogo,alt:"html-logo"}),h.jsx(Et,{children:"HTML"})]}),h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.cssLogo,alt:"css-logo"}),h.jsx(Et,{children:"CSS"})]}),h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.tailwindLogo,alt:"tailwind-logo"}),h.jsx(Et,{children:"Tailwind CSS"})]}),h.jsxs(St,{children:[h.jsx(Ct,{src:Pt.mobxLogo,alt:"mobx-logo"}),h.jsx(Et,{children:"MobX"})]})]})}),t==="projects"&&h.jsx(h.Fragment,{children:h.jsxs(Jg,{children:[h.jsxs(bg,{children:["Country Explorer (In Progress)",h.jsx(f1,{onClick:o=>{o.preventDefault(),window.open("https://accendo-countriesinfo.vercel.app/","_blank","noopener, noreferrer")}}),h.jsx(sp,{onClick:o=>{o.preventDefault(),window.open("https://github.com/NathanGoh95/accendo-countriesinfo","_blank","noopener, noreferrer")}})]}),h.jsxs(qg,{children:[h.jsx(dc,{src:"country_explorer_card.png",alt:"country-explorer-card"}),h.jsx(dc,{src:"country_explorer_list.png",alt:"country-explorer-list"})]}),h.jsx(e1,{children:"A responsive web application built with Next.js, Tailwind CSS, Material UI, and MobX, designed to explore global countries, facts, and data. The application integrates the REST Countries API to provide real-time information, allowing users to search for countries, filter by region, toggle between light and dark themes, and view countries in list or card formats. Currently still in progress to improve the user experience and optimization for mobile view."})]})})]})]})})},fc="80px",J={mobile:"430px",tablet:"768px",desktop:"1024px"},v1=$.div`
   height: calc(100vh - ${fc});
   margin-top: ${fc};
+  overflow: hidden;
+  position: relative;
 `,y1=$.div`
   background-color: #000814;
   display: flex;
@@ -1008,6 +1023,7 @@ Error generating stack: `+o.message+`
 
   @media screen and (max-width: ${J.mobile}) {
     width: 100%;
+    height: 50%;
   }
 `,x1=$.img`
   width: 50%;

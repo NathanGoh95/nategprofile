@@ -9,9 +9,11 @@
 }
 
 .body {
-  height: 100vh;
-  overflow: hidden;
-  /* width: 1; */
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 ::-webkit-scrollbar {

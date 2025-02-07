@@ -56,11 +56,15 @@ const ExperiencePage = () => {
       <Content>
         <LeftPanel>
           <DrawerContainer>
-            <DrawerList onClick={() => handleClick('workExperience')} className={activeDrawer === 'workExperience' ? 'active' : ''}>
+            <DrawerList
+              onClick={() => handleClick('workExperience')}
+              className={activeDrawer === 'workExperience' ? 'active' : ''}>
               Work Experience
               <LucideChevronRightCircle />
             </DrawerList>
-            <DrawerList onClick={() => handleClick('professionalSkills')} className={activeDrawer === 'professionalSkills' ? 'active' : ''}>
+            <DrawerList
+              onClick={() => handleClick('professionalSkills')}
+              className={activeDrawer === 'professionalSkills' ? 'active' : ''}>
               Professional Skills
               <LucideChevronRightCircle />
             </DrawerList>
@@ -81,15 +85,25 @@ const ExperiencePage = () => {
                     <RoleYear>2024 - Present</RoleYear>
                   </RoleContainer>
                   <RoleDesc>
-                    • Developed and optimized frontend features using Next.js, TypeScript, Tailwind CSS, and MobX, significantly enhancing rendering efficiency and application
-                    performance
+                    • Developed and optimized frontend features using Next.js, TypeScript, Tailwind CSS, and MobX,
+                    significantly enhancing rendering efficiency and application performance
                   </RoleDesc>
-                  <RoleDesc>• Integrated APIs to enable seamless data flow and dynamic content rendering, boosting interactivity and user engagement</RoleDesc>
-                  <RoleDesc>• Collaborated with stakeholders and designers to create user-friendly enhancements, directly improving users’ experience</RoleDesc>
                   <RoleDesc>
-                    • Actively participated in agile processes, including sprint planning and stand-ups, contributing to an improvement in feature delivery timelines
+                    • Integrated APIs to enable seamless data flow and dynamic content rendering, boosting interactivity
+                    and user engagement
                   </RoleDesc>
-                  <RoleDesc>• Implemented proactive testing and debugging, reducing bug reports and increasing overall product stability</RoleDesc>
+                  <RoleDesc>
+                    • Collaborated with stakeholders and designers to create user-friendly enhancements, directly
+                    improving users’ experience
+                  </RoleDesc>
+                  <RoleDesc>
+                    • Actively participated in agile processes, including sprint planning and stand-ups, contributing to
+                    an improvement in feature delivery timelines
+                  </RoleDesc>
+                  <RoleDesc>
+                    • Implemented proactive testing and debugging, reducing bug reports and increasing overall product
+                    stability
+                  </RoleDesc>
                 </div>
                 <div>
                   <CompanyName>Process Coordinator</CompanyName>
@@ -98,11 +112,21 @@ const ExperiencePage = () => {
                     <RoleYear>2022 - 2024</RoleYear>
                   </RoleContainer>
                   <RoleDesc>
-                    • Supported the Technical Director as a personal assistant, handling documentation and coordinating daily administrative tasks to streamline operations
+                    • Supported the Technical Director as a personal assistant, handling documentation and coordinating
+                    daily administrative tasks to streamline operations
                   </RoleDesc>
-                  <RoleDesc>• Facilitated communication across departments, ensuring the efficient execution of directives from HQ</RoleDesc>
-                  <RoleDesc>• Established and maintained standardized documentation and workflows, reducing process inconsistencies and improving operational efficiency</RoleDesc>
-                  <RoleDesc>• Prepared and presented essential departmental documentation like teahnical reports for senior management</RoleDesc>
+                  <RoleDesc>
+                    • Facilitated communication across departments, ensuring the efficient execution of directives from
+                    HQ
+                  </RoleDesc>
+                  <RoleDesc>
+                    • Established and maintained standardized documentation and workflows, reducing process
+                    inconsistencies and improving operational efficiency
+                  </RoleDesc>
+                  <RoleDesc>
+                    • Prepared and presented essential departmental documentation like teahnical reports for senior
+                    management
+                  </RoleDesc>
                 </div>
                 <div>
                   <CompanyName>Service Provider Support</CompanyName>
@@ -110,10 +134,21 @@ const ExperiencePage = () => {
                     <RoleTitle>Daikin Malaysia Sales & Services</RoleTitle>
                     <RoleYear>2021 - 2022</RoleYear>
                   </RoleContainer>
-                  <RoleDesc>• Managed the onboarding and training of service providers, ensuring consistent service quality nationwide</RoleDesc>
-                  <RoleDesc>• Converted 20+ suppliers to authorized service providers, expanding service reach and ensuring resource availability</RoleDesc>
-                  <RoleDesc>• Provided support for service providers and handled customer inquiries, enhancing both service quality and customer satisfaction</RoleDesc>
-                  <RoleDesc>• Oversaw the E-commerce platform on customer service and ensuring accurate stock management</RoleDesc>
+                  <RoleDesc>
+                    • Managed the onboarding and training of service providers, ensuring consistent service quality
+                    nationwide
+                  </RoleDesc>
+                  <RoleDesc>
+                    • Converted 20+ suppliers to authorized service providers, expanding service reach and ensuring
+                    resource availability
+                  </RoleDesc>
+                  <RoleDesc>
+                    • Provided support for service providers and handled customer inquiries, enhancing both service
+                    quality and customer satisfaction
+                  </RoleDesc>
+                  <RoleDesc>
+                    • Oversaw the E-commerce platform on customer service and ensuring accurate stock management
+                  </RoleDesc>
                 </div>
                 <div>
                   <CompanyName>Sales Support & Marketing</CompanyName>
@@ -121,10 +156,21 @@ const ExperiencePage = () => {
                     <RoleTitle>Matrix Concepts Sdn Bhd</RoleTitle>
                     <RoleYear>2018 - 2020</RoleYear>
                   </RoleContainer>
-                  <RoleDesc>• Developed targeted marketing campaigns that achieved 80% sales for assigned projects, effectively reaching targetted buyer demographics</RoleDesc>
-                  <RoleDesc>• Organized large-scale annual events and property exhibitions, driving walk-in traffic and potential buyers</RoleDesc>
-                  <RoleDesc>• Ensured marketing collateral availability, coordinating materials like scale models and brochures to optimize promotional efforts</RoleDesc>
-                  <RoleDesc>• Compiled and analyzed daily sales records, providing valuable insights for strategic planning</RoleDesc>
+                  <RoleDesc>
+                    • Developed targeted marketing campaigns that achieved 80% sales for assigned projects, effectively
+                    reaching targetted buyer demographics
+                  </RoleDesc>
+                  <RoleDesc>
+                    • Organized large-scale annual events and property exhibitions, driving walk-in traffic and
+                    potential buyers
+                  </RoleDesc>
+                  <RoleDesc>
+                    • Ensured marketing collateral availability, coordinating materials like scale models and brochures
+                    to optimize promotional efforts
+                  </RoleDesc>
+                  <RoleDesc>
+                    • Compiled and analyzed daily sales records, providing valuable insights for strategic planning
+                  </RoleDesc>
                 </div>
               </CompanyContainer>
             </>
@@ -192,9 +238,35 @@ const ExperiencePage = () => {
                   <ProjectImage src='country_explorer_list.png' alt='country-explorer-list' />
                 </ImageContainer>
                 <ProjectDesc>
-                  A responsive web application built with Next.js, Tailwind CSS, Material UI, and MobX, designed to explore global countries, facts, and data. The application
-                  integrates the REST Countries API to provide real-time information, allowing users to search for countries, filter by region, toggle between light and dark
-                  themes, and view countries in list or card formats. Currently still in progress to improve the user experience and optimization for mobile view.
+                  A responsive web application built with Next.js, Tailwind CSS, Material UI, and MobX, designed to
+                  explore global countries, facts, and data. The application integrates the REST Countries API to
+                  provide real-time information, allowing users to search for countries, filter by region, toggle
+                  between light and dark themes, and view countries in list or card formats.
+                </ProjectDesc>
+              </ProjectContainer>
+              <ProjectContainer>
+                <ProjectTitle>
+                  Image Carousel
+                  <LucideExternalLink
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open('https://image-carousel-nateg.vercel.app/', '_blank', 'noopener, noreferrer');
+                    }}
+                  />
+                  <LucideGithub
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open('https://github.com/NathanGoh95/image-carousel', '_blank', 'noopener, noreferrer');
+                    }}
+                  />
+                </ProjectTitle>
+                <ImageContainer>
+                  <ProjectImage src='image_carousel.png' alt='image-carousel' />
+                </ImageContainer>
+                <ProjectDesc>
+                  Built with React & Vite, TypeScript, Tailwind CSS, ShadCN UI, and Framer Motion, designed as a
+                  practice project to explore the Framer Motion library. This project focuses on implementing smooth
+                  animations and interactive transitions within an image carousel.
                 </ProjectDesc>
               </ProjectContainer>
             </>

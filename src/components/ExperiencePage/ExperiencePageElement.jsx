@@ -178,8 +178,9 @@ export const RightPanel = styled.div`
   width: 50%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-self: center;
-  align-items: center;
+  align-items: flex-start;
   overflow: auto;
   box-sizing: border-box;
   animation: fade-in-right 2s forwards;
@@ -319,8 +320,8 @@ export const SkillContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 70%;
-  padding: 20px;
+  height: 100%;
+  padding: 125px 20px;
   position: relative;
 
   @media screen and (max-width: ${breakpoints.mobile}) {
@@ -442,7 +443,7 @@ export const ProjectTitle = styled.div`
     font-size: 1rem;
 
     svg {
-      width: 12px;    
+      width: 12px;
       height: 12px;
     }
   }
@@ -457,6 +458,7 @@ export const ProjectDesc = styled.div`
   font-size: 1rem;
   line-height: 1.6;
   text-align: justify;
+  margin-bottom: 1.5rem;
 
   @media screen and (max-width: ${breakpoints.mobile}) {
     font-size: 0.8rem;

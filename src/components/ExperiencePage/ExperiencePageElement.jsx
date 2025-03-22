@@ -315,7 +315,7 @@ export const RoleDesc = styled.div`
 
 export const SkillContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   justify-content: center;
   align-items: center;

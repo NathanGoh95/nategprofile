@@ -31,6 +31,7 @@ import htmlLogo from '../../assets/html5-logo.svg';
 import cssLogo from '../../assets/css3-logo.svg';
 import tailwindLogo from '../../assets/tailwind-logo.svg';
 import mobxLogo from '../../assets/mobx-logo.svg';
+import angularLogo from '../../assets/angular-logo.svg';
 import { LucideChevronRightCircle, LucideExternalLink, LucideGithub } from 'lucide-react';
 
 const skillLogos = {
@@ -42,6 +43,7 @@ const skillLogos = {
   cssLogo,
   tailwindLogo,
   mobxLogo,
+  angularLogo
 };
 
 const ExperiencePage = () => {
@@ -85,7 +87,7 @@ const ExperiencePage = () => {
                     <RoleYear>2024 - Present</RoleYear>
                   </RoleContainer>
                   <RoleDesc>
-                    • Developed and optimized frontend features using Next.js, TypeScript, Tailwind CSS, and MobX,
+                    • Developed and optimized frontend features using Next.js, Angular, TypeScript, Tailwind CSS, and MobX,
                     significantly enhancing rendering efficiency and application performance
                   </RoleDesc>
                   <RoleDesc>
@@ -186,6 +188,10 @@ const ExperiencePage = () => {
                 <SkillItem>
                   <SkillIcon src={skillLogos.nextjsLogo} alt='nextjs-logo' />
                   <SkillLabel>Next.js</SkillLabel>
+                </SkillItem>
+                <SkillItem>
+                  <SkillIcon src={skillLogos.angularLogo} alt='angular-logo' />
+                  <SkillLabel>Angular</SkillLabel>
                 </SkillItem>
                 <SkillItem>
                   <SkillIcon src={skillLogos.javascriptLogo} alt='javascript-logo' />

@@ -43,7 +43,7 @@ const skillLogos = {
   cssLogo,
   tailwindLogo,
   mobxLogo,
-  angularLogo
+  angularLogo,
 };
 
 const ExperiencePage = () => {
@@ -87,8 +87,8 @@ const ExperiencePage = () => {
                     <RoleYear>2024 - Present</RoleYear>
                   </RoleContainer>
                   <RoleDesc>
-                    • Developed and optimized frontend features using Next.js, Angular, TypeScript, Tailwind CSS, and MobX,
-                    significantly enhancing rendering efficiency and application performance
+                    • Developed and optimized frontend features using Next.js, Angular, TypeScript, Tailwind CSS, and
+                    MobX, significantly enhancing rendering efficiency and application performance
                   </RoleDesc>
                   <RoleDesc>
                     • Integrated APIs to enable seamless data flow and dynamic content rendering, boosting interactivity
@@ -235,7 +235,11 @@ const ExperiencePage = () => {
                   <LucideGithub
                     onClick={(e) => {
                       e.preventDefault();
-                      window.open('https://github.com/NathanGoh95/accendo-countriesinfo', '_blank', 'noopener, noreferrer');
+                      window.open(
+                        'https://github.com/NathanGoh95/accendo-countriesinfo',
+                        '_blank',
+                        'noopener, noreferrer',
+                      );
                     }}
                   />
                 </ProjectTitle>
@@ -273,6 +277,36 @@ const ExperiencePage = () => {
                   Built with React & Vite, TypeScript, Tailwind CSS, ShadCN UI, and Framer Motion, designed as a
                   practice project to explore the Framer Motion library. This project focuses on implementing smooth
                   animations and interactive transitions within an image carousel.
+                </ProjectDesc>
+              </ProjectContainer>
+              <ProjectContainer>
+                <ProjectTitle>
+                  Anime Search App
+                  <LucideExternalLink
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        'https://anime-search-app-pink.vercel.app/homepage/1',
+                        '_blank',
+                        'noopener, noreferrer',
+                      );
+                    }}
+                  />
+                  <LucideGithub
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open('https://github.com/NathanGoh95/anime-search-app', '_blank', 'noopener, noreferrer');
+                    }}
+                  />
+                </ProjectTitle>
+                <ImageContainer>
+                  <ProjectImage src='anime_search_app_1.png' alt='anime-search-app-1' />
+                  <ProjectImage src='anime_search_app_2.png' alt='anime-search-app-2' />
+                </ImageContainer>
+                <ProjectDesc>
+                  A modern web application built with React, TypeScript, Vite, Material UI, and Emotion, designed for
+                  seamless anime discovery and exploration. This responsive app leverages a scalable architecture and
+                  type-safe API integration to deliver real-time anime data in a clean, user-friendly interface.
                 </ProjectDesc>
               </ProjectContainer>
             </>

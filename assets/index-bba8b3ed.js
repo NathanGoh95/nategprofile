@@ -515,7 +515,7 @@ Error generating stack: `+o.message+`
     padding: 20px;
     font-size: 0.8rem;
   }
-`,gc="/nategprofile/assets/Resume_Nathan_Goh-9334d0dd.pdf",Yg=()=>p.jsx(Ug,{children:p.jsxs(Bg,{children:[p.jsx(Wg,{children:p.jsx(Hg,{src:"aboutme.png",alt:"aboutme-img"})}),p.jsxs(Vg,{children:[p.jsx(Qg,{children:"About Me"}),p.jsx(Kg,{children:"I’ve recently transitioned into the tech industry, focusing on frontend development through self-teaching and continuous learning. After completing an internship, I continued working with the same team, gaining additional valuable hands-on experience. This has deepened my passion for creating seamless, user-friendly digital solutions, and I’m committed to further improving my skills. I’m eager to contribute to impactful projects, collaborate with talented professionals, and continue growing in a dynamic and innovative environment."}),p.jsx(Gg,{href:gc,onClick:e=>{e.preventDefault(),window.open(gc,"_blank","noopener, noreferrer")},children:"Download Resume"})]})]})}),vc="80px",L={mobile:"430px",tablet:"768px",desktop:"1024px"},Xg=$.div`
+`,gc="/nategprofile/assets/Resume_Nathan_Goh-8a8b8455.pdf",Yg=()=>p.jsx(Ug,{children:p.jsxs(Bg,{children:[p.jsx(Wg,{children:p.jsx(Hg,{src:"aboutme.png",alt:"aboutme-img"})}),p.jsxs(Vg,{children:[p.jsx(Qg,{children:"About Me"}),p.jsx(Kg,{children:"I’ve recently transitioned into the tech industry, focusing on frontend development through self-teaching and continuous learning. After completing an internship, I continued working with the same team, gaining additional valuable hands-on experience. This has deepened my passion for creating seamless, user-friendly digital solutions, and I’m committed to further improving my skills. I’m eager to contribute to impactful projects, collaborate with talented professionals, and continue growing in a dynamic and innovative environment."}),p.jsx(Gg,{href:gc,onClick:e=>{e.preventDefault(),window.open(gc,"_blank","noopener, noreferrer")},children:"Download Resume"})]})]})}),vc="80px",L={mobile:"430px",tablet:"768px",desktop:"1024px"},Xg=$.div`
   height: calc(100vh - ${vc});
   overflow: hidden;
   margin-top: ${vc};
@@ -933,7 +933,7 @@ Error generating stack: `+o.message+`
   @media screen and (min-width: ${L.tablet}) and (max-width: ${L.desktop}) {
     font-size: 1rem;
   }
-`,n1="/nategprofile/assets/react-logo-56311bed.svg",r1="/nategprofile/assets/nextjs-logo-d0aad26e.svg",i1="/nategprofile/assets/javascript-logo-348a59a3.svg",o1="/nategprofile/assets/typescript-logo-6a4ddc4d.svg",l1="/nategprofile/assets/html5-logo-d4415476.svg",a1="/nategprofile/assets/css3-logo-3950d31a.svg",s1="/nategprofile/assets/tailwind-logo-d9011701.svg",u1="/nategprofile/assets/mobx-logo-3dfcabba.svg",c1="/nategprofile/assets/angular-logo-a7bb1f84.svg";/**
+`,n1="/nategprofile/assets/react-logo-56311bed.svg",r1="/nategprofile/assets/nextjs-logo-d0aad26e.svg",i1="/nategprofile/assets/javascript-logo-348a59a3.svg",o1="/nategprofile/assets/typescript-logo-6a4ddc4d.svg",l1="/nategprofile/assets/html5-logo-d4415476.svg",a1="/nategprofile/assets/css3-logo-3950d31a.svg",s1="/nategprofile/assets/tailwind-logo-d9011701.svg",u1="/nategprofile/assets/mobx-logo-3dfcabba.svg",c1="/nategprofile/assets/angular-logo-03b95bf5.svg";/**
  * @license lucide-react v0.460.0 - ISC
  *
  * This source code is licensed under the ISC license.
